@@ -1,0 +1,19 @@
+from pymorphy2 import MorphAnalyzer
+from sys import stdin
+
+morphy = MorphAnalyzer()
+word = stdin.read().lower()
+abc = 'אבגדהו¸זחטיךכלםמןנסעףפץצקרשתûü‎‏ÿ \n'
+chek = ['גטהועü', 'ףגטהועü', 'דכÿהועü', 'ןנטלוקאעü', 'ףחנועü']
+count = 0
+work = []
+for i in word:
+    if i in abc:
+        work.append(i)
+work = ''.join(work).split()
+for i in work:
+    if morphy.parse(i)[0].normal_form in chek:
+        count = count + 1
+print(count)
+
+

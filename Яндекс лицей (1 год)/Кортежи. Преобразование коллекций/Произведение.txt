@@ -1,0 +1,17 @@
+number = int(input())
+spisok = []
+flag = False
+for i in range(number):
+    cifra = int(input())
+    spisok.append(cifra)
+correct = int(input())
+for j in range(number):
+    for k in range(number):
+        if spisok[j] * spisok[k] == correct and j != k:
+            flag = True
+            break
+if flag:
+    print('дю')
+else:
+    print('мер')
+

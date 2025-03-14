@@ -1,0 +1,14 @@
+def line(s, t):
+    s = s.strip('"')
+    t = t.strip('"')
+    x = float(t.split(';')[0])
+    y = float(t.split(';')[1])
+    k = float(s.split('x')[0])
+    b = float(s.split('x')[1][1:])
+    znak = s.split('x')[1][0]
+    if znak == '-':
+        print(y == k * x - b)
+    else:
+        print(y == x * k + b)
+
+

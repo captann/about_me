@@ -1,0 +1,32 @@
+spr = {}
+
+
+def add_friends(name_of_person, list_of_friends):
+    global spr
+    if name_of_person not in spr:
+        spr[name_of_person] = list_of_friends
+    else:
+        for i in list_of_friends:
+            spr[name_of_person].append(i)
+    return spr
+
+
+def are_friends(name_of_person1, name_of_person2):
+    global spr
+    if name_of_person2 in spr.get(name_of_person1):
+        return True
+    return False
+
+
+def print_friends(name_of_person):
+    global spr
+    abc = []
+    abc = spr.get(name_of_person)
+    abc.sort()
+    for i in abc:
+        if i != abc[-1]:
+            print(i, end=' ')
+        else:
+            print(i)
+
+

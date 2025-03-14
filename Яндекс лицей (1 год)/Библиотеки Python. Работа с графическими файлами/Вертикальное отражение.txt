@@ -1,0 +1,19 @@
+from PIL import Image
+
+
+def mirror():
+    im = Image.open("image.jpg")
+    pixels = im.load()
+    x, y = im.size
+    save = []
+    for i in range(y):
+        save = []
+        for t in range(x):
+            save.append(pixels[t, i])
+        save.reverse()
+        for t in range(x):
+            pixels[t, i] = save[t]
+        save = []
+    im.save("res.jpg")
+    im.show()
+

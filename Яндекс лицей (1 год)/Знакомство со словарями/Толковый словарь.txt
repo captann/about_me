@@ -1,0 +1,15 @@
+N = int(input())
+words = {}
+for i in range(N):
+    word = input()
+    k = word.split()
+    g = len(k[0])
+    words[k[0]] = word[g:]
+M = int(input())
+for i in range(M):
+    t = input()
+    if t in words:
+        print(words.get(t).lstrip())
+    else:
+        print('Нет в словаре')
+

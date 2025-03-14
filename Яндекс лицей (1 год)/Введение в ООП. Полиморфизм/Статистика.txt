@@ -1,0 +1,39 @@
+class MinStat:
+    def __init__(self):
+        self.work = []
+
+    def add_number(self, number):
+        self.work.append(number)
+
+    def result(self):
+        if len(self.work) > 0:
+            return int(min(self.work))
+        return None
+
+
+class MaxStat:
+    def __init__(self):
+        self.work = []
+
+    def add_number(self, number):
+        self.work.append(number)
+
+    def result(self):
+        if len(self.work) > 0:
+            return int(max(self.work))
+        return None
+
+
+class AverageStat:
+    def __init__(self):
+        self.work = []
+
+    def add_number(self, number):
+        self.work.append(number)
+
+    def result(self):
+        if len(self.work) > 0:
+            return float(((sum(self.work)) / (len(self.work))))
+        return None
+
+

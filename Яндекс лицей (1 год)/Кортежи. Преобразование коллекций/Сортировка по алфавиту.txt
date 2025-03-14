@@ -1,0 +1,15 @@
+N = int(input())
+first = 'ÿ'
+words = []
+for i in range(N):
+    word = input()
+    words.append(word)
+for g in range(N):
+    first = 'ÿÿÿÿ'
+    for j in words:
+        if j <= first:
+            first = j
+    words.remove(first)
+    print(first)
+
+

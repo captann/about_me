@@ -1,0 +1,18 @@
+def eratosthenes(N):
+    abc = [i for i in range(2, N + 1)]
+    easy = []
+    stop = []
+    for i in abc:
+        flag = True
+        for t in abc:
+            if i % t == 0 and t != i:
+                flag = False
+        if flag:
+            easy.append(i)
+    for i in easy:
+        for t in abc:
+            if t % i == 0 and t != i:
+                stop.append(str(t))
+                del abc[abc.index(t)]
+    print(' '.join(stop))
+

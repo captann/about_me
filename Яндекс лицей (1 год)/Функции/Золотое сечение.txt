@@ -1,0 +1,14 @@
+def fibonachi(i):
+    a = 0
+    b = 1
+    for t in range(i):
+        a, b = b, a + b
+    return a
+
+
+def golden_ratio(i):
+    q = fibonachi(i + 1)
+    z = fibonachi(i)
+    print(q / z)
+
+

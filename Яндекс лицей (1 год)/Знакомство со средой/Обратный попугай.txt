@@ -1,0 +1,7 @@
+fraz1 = input()
+fraz2 = input()
+fraz3 = input()
+print(fraz3)
+print(fraz2)
+print(fraz1)
+

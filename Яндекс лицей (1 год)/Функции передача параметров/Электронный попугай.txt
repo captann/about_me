@@ -1,0 +1,9 @@
+already = set()
+
+
+def parrot(phrase):
+    global already
+    if phrase not in already:
+        already.add(phrase)
+    else:
+        print(phrase)

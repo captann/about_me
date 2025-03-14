@@ -1,0 +1,18 @@
+import wave
+import struct
+
+
+def break_the_silence():
+    work = wave.open("in.wav", mode="rb")
+    final = wave.open("out.wav", mode="wb")
+    final.setparams(work.getparams())
+    n_o_f = work.getnframes()
+    mean = struct.unpack("<" + str(n_o_f) + "h",
+                         work.readframes(n_o_f))
+    mean_2 = [i for i in mean if abs(i) > 5]
+    fram_2 = struct.pack("<" + str(len(mean_2)) + "h", *mean_2)
+    final.writeframes(fram_2)
+    work.close()
+    final.close()
+
+

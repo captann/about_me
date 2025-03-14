@@ -1,0 +1,26 @@
+import sys
+
+from random import sample
+
+spisok = list(map(str.strip, sys.stdin))
+save = []
+final = []
+sp = {}
+already = []
+for i in spisok:
+    sp[i] = True
+for i in spisok:
+    save = []
+    a = sample(spisok, 1)
+    cond = sp[a[0]]
+    while a[0] == i or not cond:
+        a = sample(spisok, 1)
+        cond = sp[a[0]]
+    sp[a[0]] = False
+    already.append(a)
+    save.append(i)
+    save.append(a[0])
+    final.append(save)
+for i in final:
+    print(f"{i[0]} - {i[1]}")
+

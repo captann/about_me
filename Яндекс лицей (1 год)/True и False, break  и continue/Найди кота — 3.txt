@@ -1,0 +1,21 @@
+stroka = '0'
+count = 0
+abc = True
+number = 0
+dweller = 0
+while stroka != 'ÑÒÎÏ':
+    stroka = input()
+    number = number + 1
+    if 'Êîò' in stroka or 'êîò' in stroka:
+        count = count + 1
+        if abc == 1:
+            dweller = number
+            abc = False
+    else:
+        count = count
+if count >= 1:
+    print(count, dweller)
+else:
+    print(count, -1)
+
+

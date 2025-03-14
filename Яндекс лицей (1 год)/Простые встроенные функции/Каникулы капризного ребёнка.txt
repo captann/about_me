@@ -1,0 +1,8 @@
+c1 = input()
+c2 = input()
+cok1 = 'Тула'
+cok2 = 'Пенза'
+if c1 != c2 and (c1 == cok1 and c2 != cok2 or c1 != cok1 and c2 == cok2):
+    print('ДА')
+else:
+    print('НЕТ')

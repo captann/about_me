@@ -1,0 +1,14 @@
+parametr = int(input())
+letters = 'ABCDEFGHI'
+abc = 0
+count = parametr
+for i in range(1, parametr + 1):
+    for h in range(1, parametr + 1):
+        print(letters[h - 1], count, ' ', end='', sep='')
+        abc = abc + 1
+        if abc == parametr:
+            print(end='\n', sep='')
+            abc = 0
+    count = count - 1
+
+

@@ -1,0 +1,34 @@
+from PIL import Image, ImageDraw
+
+
+def board(num, size):
+    s = size
+    im = Image.new("RGB", (size * num, size * num), (0, 0, 0))
+    drawer = ImageDraw.Draw(im)
+    dr = drawer
+    count = 0
+    number = 0
+    if num % 2 == 0:
+        for i in range(0, size * num, size):
+            count = count + 1
+            for t in range(0, size * num, size):
+                number = number + 1
+                if count % 2 == 0 and number % 2 != 0:
+                    dr.rectangle(((t, i), (t + s - 1, i + s - 1)), "#FFFFFF")
+                elif count % 2 != 0 and number % 2 == 0:
+                    dr.rectangle(((t, i), (t + s - 1, i + s - 1)), "#FFFFFF")
+    else:
+        ab = size - 1
+        for i in range(0, size * num, size):
+            count = count + 1
+            for t in range(0, size * num, size):
+                number += 1
+                flag = True
+                if count % 2 != 0 and number % 2 == 0 and flag:
+                    dr.rectangle(((t, i), (t + ab, i + ab)), "#FFFFFF")
+                elif count % 2 == 0 and number % 2 != 0:
+                    for x in range(0, size * num, size):
+                        if (x / size) % 2 == 0:
+                            dr.rectangle(((x, i), (x + ab, i + ab)), "#FFFFFF")
+    im.save("res.png")
+

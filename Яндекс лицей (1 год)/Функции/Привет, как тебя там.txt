@@ -1,0 +1,24 @@
+def who_are_you_and_hello():
+    abc = True
+    flag = True
+    save = []
+    while abc:
+        flag = True
+        name = input()
+        save = []
+        if ord(name[0]) < 1040 and ord(name[0]) > 1071:
+            continue
+        if len(name.split()) > 1:
+            continue
+        save = list(name)[1:]
+        for i in save:
+            if ord(i) < 1072 or ord(i) > 1103:
+                if i != 'ё' and i != 'Ё':
+                    flag = False
+        if not flag:
+            continue
+        if abc:
+            print(f"Привет, {name}!")
+            abc = False
+
+

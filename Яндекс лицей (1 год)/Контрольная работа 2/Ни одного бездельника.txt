@@ -1,0 +1,19 @@
+import sys
+data = list(map(str.strip, sys.stdin))
+save, work, words, already = [], [], {}, []
+for i in data:
+    save = []
+    work.append(i.split(' - '))
+for i in work:
+    if i[1] not in already:
+        already.append(i[1])
+        words[i[1]] = []
+for i in work:
+    if i[1] in words:
+        if i[0] not in words[i[1]]:
+            words[i[1]].append(i[0])
+result = words.keys()
+for i in result:
+    print(f"{i}: {'; '.join(words[i])}")
+
+

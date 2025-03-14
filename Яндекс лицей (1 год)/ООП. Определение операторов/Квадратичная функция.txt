@@ -1,0 +1,11 @@
+class SquareFunction:
+    def __init__(self, a, b, t):
+        self.a = a
+        self.b = b
+        self.t = t
+
+    def __call__(self, number):
+        res = number ** 2 * self.a + number * self.b + self.t
+        return res
+
+

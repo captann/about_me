@@ -1,0 +1,12 @@
+maximum = int(input())
+kolvo_zagolovkov = int(input())
+for i in range(kolvo_zagolovkov):
+    zagolovok = input()
+    k = len(zagolovok)
+    if k <= maximum:
+        print(zagolovok)
+    else:
+        word = zagolovok[:(maximum - 3)]
+        print(word, '...', sep='')
+
+

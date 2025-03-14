@@ -1,0 +1,7 @@
+word = input()
+sentense = input().split(' ')
+for i in sentense:
+    if word in i or word.upper() in i:
+        print(i)
+
+

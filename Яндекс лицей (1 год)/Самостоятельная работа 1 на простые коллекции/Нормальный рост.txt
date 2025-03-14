@@ -1,0 +1,14 @@
+m = input().lower().split('~')
+norma = 0
+for i in m:
+    normal = ['n', 'o', 'r', 'm', 'a', 'l']
+    number = 0
+    for p in i:
+        if p in normal:
+            number += 1
+            normal.remove(p)
+    if number > 1:
+        norma += 1
+print(norma)
+
+

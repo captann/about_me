@@ -1,0 +1,10 @@
+def partial_sums(*args):
+    work = [0]
+    for i in range(len(args)):
+        if i == 0:
+            work.append(args[i])
+        else:
+            work.append(sum(args[: i + 1]))
+    return work
+
+

@@ -1,0 +1,9 @@
+def find_mountain(a):
+    save = []
+    for i in a:
+        save.append(max(i))
+    col = save.index(max(save))
+    r2 = a[col]
+    row = r2.index(max(r2))
+    return col, row
+

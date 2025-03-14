@@ -1,0 +1,10 @@
+a = int(input())
+b = a // 100
+c = a % 11
+d = a % 10
+if b != c and b != d and c != d:
+    print('ОК')
+if (d == b or d == c or b == c) and not (d == b == c):
+    print('В числе две одинаковые цифры')
+elif d == b == c:
+    print('В числе все цифры одинаковые')

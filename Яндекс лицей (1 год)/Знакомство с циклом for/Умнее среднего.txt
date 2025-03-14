@@ -1,0 +1,27 @@
+tested = int(input())
+start = 0
+count = 0
+for i in range(tested):
+    q = int(input())
+    start = start + q
+    count += 1
+    if count == 1:
+        sr = q
+        print(0)
+    elif count == 2:
+        sr = sr
+        if q > sr:
+            print('>')
+        elif q < sr:
+            print('<')
+        else:
+            print('0')        
+        
+    else:
+        sr = start / count
+        if q > sr:
+            print('>')
+        elif q < sr:
+            print('<')
+        else:
+            print('0')

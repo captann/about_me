@@ -1,0 +1,6 @@
+word = input()
+k = len(word)
+for i in range(k):
+    print(word[i])
+
+

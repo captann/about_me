@@ -1,0 +1,8 @@
+def space_game(text):
+    b = list(text)
+    a = b.count(' ')
+    if a % 2 == 0:
+        print('Вы выиграли')
+    else:
+        print('Вы проиграли')
+

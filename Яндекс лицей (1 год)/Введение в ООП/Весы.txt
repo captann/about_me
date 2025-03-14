@@ -1,0 +1,20 @@
+class Balance:
+    def __init__(self):
+        self.lef = 0
+        self.rig = 0
+
+    def add_right(self, count):
+        self.rig = self.rig + count
+
+    def add_left(self, count):
+        self.lef = self.lef + count
+
+    def result(self):
+        if self.lef > self.rig:
+            return 'L'
+        elif self.lef < self.rig:
+            return 'R'
+        else:
+            return '='
+
+

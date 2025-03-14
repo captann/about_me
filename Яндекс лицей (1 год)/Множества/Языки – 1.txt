@@ -1,0 +1,23 @@
+nemci = int(input())
+N = set()
+english = int(input())
+E = set()
+for i in range(nemci):
+    srName = input()
+    if srName in N:
+        N = set()
+    else:
+        N.add(srName)
+for j in range(english):
+    srName = input()
+    if srName in E:
+        E = set()
+    else:
+        E.add(srName)
+differ = E.symmetric_difference(N)
+t = len(differ)
+if t == 0:
+    print('NO')
+else:
+    print(t)
+

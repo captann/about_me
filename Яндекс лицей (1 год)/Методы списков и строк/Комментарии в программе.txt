@@ -1,0 +1,9 @@
+for i in range(int(input()[1:])):
+    count = input()
+    m = count.find('#')
+    if m == -1:
+        print(count.rstrip())
+    else:
+        print(count[:m].rstrip())
+
+

@@ -1,0 +1,23 @@
+def larger_root(p, q):
+    DIS = p ** 2 - 4 * q
+    return ((-p + pow(DIS, 0.5)) / 2)
+
+
+def smaller_root(p, q):
+    DIS = p ** 2 - 4 * q
+    return ((-p - pow(DIS, 0.5)) / 2)
+
+
+def discriminant(a, b, c):
+    return b ** 2 - 4 * a * c
+
+
+def main():
+    p = float(input())
+    q = float(input())
+    print(p ** 2 - 4 * q)
+    print(smaller_root(p, q), end=' ')
+    print(larger_root(p, q))
+    
+    
+

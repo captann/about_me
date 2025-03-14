@@ -1,0 +1,12 @@
+class Selector:
+    def __init__(self, values):
+        self.ne = [i for i in values if i % 2 != 0]
+        self.numbers = [i for i in values if i % 2 == 0]
+
+    def get_odds(self):
+        return self.ne
+
+    def get_evens(self):
+        return self.numbers
+
+

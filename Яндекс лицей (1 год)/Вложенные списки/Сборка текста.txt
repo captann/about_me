@@ -1,0 +1,20 @@
+numbers = input().split()
+number = 0
+abc = True
+abc2 = True
+s = [int(i) for i in numbers]
+count = len(s)
+words = input().split()
+words = [i.lower() for i in words]
+for i in s:
+    numbeê = number + 1
+    if i == s[0] and abc:
+        print(words[i - 1].capitalize(), end=' ')
+        abc = False
+    else:
+        if s.index(i) != number - 1:
+            print(words[i - 1], end=' ')
+
+        else:
+            print(words[i - 1])
+

@@ -1,0 +1,10 @@
+kamnit = int(input())
+xod = 0
+while kamnit != 1:
+    if kamnit % 2 == 0:
+        kamnit //= 2
+        xod = xod + 1
+    elif kamnit % 2 > 0:
+        kamnit -= 1
+        xod = xod + 1
+print(xod)

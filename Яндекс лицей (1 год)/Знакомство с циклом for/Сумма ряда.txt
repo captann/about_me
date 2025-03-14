@@ -1,0 +1,14 @@
+n = int(input())
+count = 0
+for i in range(n):
+    number = int(input())
+    count = count + 1
+    if i == 0:
+        summ = number
+    else:
+        if count % 2 == 0:
+            summ = summ - number
+        else:
+            summ = summ + number
+print(summ)
+

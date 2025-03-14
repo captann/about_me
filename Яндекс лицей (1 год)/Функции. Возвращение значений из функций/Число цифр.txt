@@ -1,0 +1,4 @@
+def num_digits(number):
+    number = len(str(number))
+    return number
+

@@ -1,0 +1,12 @@
+def month_name(num, lan):
+    en = ['january', 'february', 'march', 'april', 'may',
+          'june', 'july', 'august', 'september', 'october',
+          'november', 'december']
+    ru = ['€нварь', 'февраль', 'март', 'апрель', 'май',
+          'июнь', 'июль', 'август', 'сент€брь', 'окт€брь',
+          'но€брь', 'декабрь']
+    if lan == 'ru':
+        return ru[num - 1]
+    elif lan == 'en':
+        return en[num - 1]
+

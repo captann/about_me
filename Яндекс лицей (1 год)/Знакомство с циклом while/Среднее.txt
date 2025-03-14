@@ -1,0 +1,11 @@
+temp = float(input())
+count = 0
+total = 0
+while temp > -300:
+    count = count + 1
+    total = total + temp
+    temp = float(input())
+print(total / count)
+
+
+

@@ -1,0 +1,11 @@
+word = input()
+g = word.split(' ')
+for t in g:
+    k = list(t)
+    for h in k:
+        if h != k[-1]:
+            print(h.upper(), '-', sep='', end='')
+        elif h == k[-1]:
+            print(h.upper(), ' ', sep='', end='')
+
+

@@ -1,0 +1,8 @@
+ros1 = float(input())
+if ros1 > 0:
+    print('+')
+if ros1 < 0:
+    print('-')
+if ros1 == 0:
+    print('0')
+

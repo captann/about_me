@@ -1,0 +1,25 @@
+class BaseObject:
+    def __init__(self, x, y, z):
+        self.xx = x
+        self.yy = y
+        self.zz = z
+        self.re = [self.xx, self.yy, self.zz]
+
+    def get_coordinates(self):
+        return self.re
+
+
+class Block(BaseObject):
+    def shatter(self):
+        self.re = [None for i in range(3)]
+
+
+class Entity(BaseObject):
+    def move(self, *arg):
+        self.re = [arg[i] for i in range(3)]
+
+
+class Thing(BaseObject):
+    pass
+
+

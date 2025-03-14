@@ -1,0 +1,14 @@
+name = input()
+k = len(name)
+chetchik = True
+abc = 'abcdefghiklmnopqrstuwxjyzv_'
+numbers = '0123456789'
+for i in range(k):
+    if name[i] not in abc and name[i] not in numbers:
+        if chetchik:
+            print('Неверный символ:', name[i])
+            chetchik = False
+if chetchik:
+    print('OK')
+
+

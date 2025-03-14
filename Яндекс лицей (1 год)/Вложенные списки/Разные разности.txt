@@ -1,0 +1,17 @@
+N = int(input())
+save = []
+differ = []
+for i in range(N):
+    k = int(input())
+    save.append(k)
+for i in save:
+    for t in save:
+        differ.append(i - t)
+save.clear()
+for i in differ:
+    if i not in save:
+        save.append(i)
+save.sort()
+for t in save:
+    print(t)
+

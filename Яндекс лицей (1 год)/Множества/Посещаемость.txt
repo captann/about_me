@@ -1,0 +1,19 @@
+papers = int(input())
+was_all = set()
+was = set()
+for i in range(papers):
+    number = int(input())
+    was = set()
+    count = 0
+    for j in range(number):
+        srName = input()
+        count = count + 1
+        if i == 0:
+            was_all.add(srName)
+        else:
+            was.add(srName)
+            if count == number:
+                was_all = was_all.intersection(was)
+for g in was_all:
+    print(g)
+

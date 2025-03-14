@@ -1,0 +1,43 @@
+ros1 = int(input())
+ros2 = int(input())
+ros3 = int(input())
+if ros1 < ros2 < ros3:
+    print(ros3)
+    print(ros2)
+    print(ros1)
+if ros2 < ros1 < ros3:
+    print(ros3)
+    print(ros1)
+    print(ros2)
+if ros1 < ros3 < ros2:
+    print(ros2)
+    print(ros3)
+    print(ros1)
+if ros3 < ros1 < ros2:
+    print(ros2)
+    print(ros1)
+    print(ros3)
+if ros2 < ros3 < ros1:
+    print(ros1)
+    print(ros3)
+    print(ros2)
+if ros3 < ros2 < ros1:
+    print(ros1)
+    print(ros2)
+    print(ros3)
+if ros1 == ros2 == ros3:
+    print(ros2)
+    print(ros3)
+    print(ros1)
+if ros1 == ros2 < ros3:
+    print(ros3)
+    print(ros2)
+    print(ros1)
+if ros1 == ros3 < ros2:
+    print(ros2)
+    print(ros3)
+    print(ros1)
+if ros2 == ros3 < ros1:
+    print(ros1)
+    print(ros3)
+    print(ros2)

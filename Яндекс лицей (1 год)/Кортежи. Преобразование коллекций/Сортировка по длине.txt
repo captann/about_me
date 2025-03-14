@@ -1,0 +1,25 @@
+N = int(input())
+first = 'фиксики'
+words = []
+last = 10 ** 3
+for i in range(N):
+    word = input()
+    words.append(word)
+for i in range(N):
+    last = 10 ** 3
+    for m in words:
+        k = len(m)
+        if k == last:
+            for t in range(k):
+                if first[t] > m[t]:
+                    first = m
+                    break
+                else:
+                    break
+        elif k < 10 ** 3 and k < last:
+            first = m
+            last = k
+    words.remove(first)
+    print(first)
+
+

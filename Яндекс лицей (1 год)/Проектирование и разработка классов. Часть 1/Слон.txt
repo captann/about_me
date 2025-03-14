@@ -1,0 +1,37 @@
+class Bishop:
+    def __init__(self, row, col, color):
+        self.row = row
+        self.col = col
+        self.color = color
+
+    def can_move(self, row1, col1):
+        if not 0 <= self.row < 8 or not 0 <= self.col < 8:
+            return False
+        if not 0 <= row1 < 8 or not 0 <= col1 < 8:
+            return False
+        if self.row == row1:
+            return False
+        if self.col == col1:
+            return False
+        a, b, t, q = self.col, self.row, col1, row1
+        if a - t == b - q:
+            return True
+        if t - a == q - b:
+            return True
+        if -(a - t) == b - q:
+            return True
+        if -(t - a) == q - b:
+            return True
+        return False
+
+    def set_position(self, row1, col1):
+        self.row = row1
+        self.col = col1
+
+    def get_color(self):
+        return self.color
+
+    def char(self):
+        return "B"
+
+

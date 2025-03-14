@@ -1,0 +1,15 @@
+import math
+import datetime as dt
+my_date_input = input().split('.')
+my_date_int = [int(i) for i in my_date_input]
+date_chek_input = input().split('.')
+date_chek_int = [int(i) for i in date_chek_input]
+my_date = dt.date(my_date_int[2], my_date_int[1], my_date_int[0])
+date_chek = dt.date(date_chek_int[2], date_chek_int[1], date_chek_int[0])
+delta = (date_chek - my_date).days
+work_T = [23, 28, 33]
+for i in range(3):
+    a = math.sin((2 * math.pi * delta) / work_T[i]) * 100
+    print(round(a, 2))
+
+

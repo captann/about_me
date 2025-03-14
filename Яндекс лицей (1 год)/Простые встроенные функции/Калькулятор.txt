@@ -1,0 +1,16 @@
+c1 = float(input())
+c2 = float(input())
+stroka = input()
+if stroka == '+':
+    print(c1 + c2)
+if stroka == '-':
+    print(c1 - c2)
+if stroka == '*':
+    print(c1 * c2)
+if stroka == '/' and c2 != 0:
+    print(c1 / c2)
+if stroka == '/' and c2 == 0:
+    print('888888')
+
+if stroka != '+' and stroka != '-' and stroka != '*' and stroka != '/':
+    print('888888')

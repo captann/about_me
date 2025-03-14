@@ -1,0 +1,6 @@
+def simple_map(transformation, values):
+    save = []
+    for i in values:
+        save.append(transformation(i))
+    return save
+

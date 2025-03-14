@@ -1,0 +1,17 @@
+number = input()
+numbers = []
+count = 0
+k = len(number)
+for i in range(k):
+    h = int(number[i])
+    numbers.append(h)
+for j in range(k):
+    if j != 0:
+        last = numbers[j - 1]
+        if last == numbers[j]:
+            count = count + 1
+        elif last != numbers[j]:
+            print(count + 1, last)
+            count = 0
+print(count + 1, number[j])
+

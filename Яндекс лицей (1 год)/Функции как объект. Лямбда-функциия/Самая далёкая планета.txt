@@ -1,0 +1,6 @@
+def find_farthest_orbit(list_of_planets):
+    save = [i for i in list_of_planets if i[0] != i[1]]
+    save2 = [i[0] * i[1] for i in save]
+    return list(save[save2.index(max(save2))])
+
+

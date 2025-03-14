@@ -1,0 +1,9 @@
+x = input()
+y = input()
+z = input()
+if x == 'ğàç' and y == 'äâà' and z == 'òğè':
+    print('ÃÎĞÈ')
+else:
+    print('ÍÅ ÃÎĞÈ')
+
+

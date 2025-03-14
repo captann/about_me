@@ -1,0 +1,17 @@
+h = int(input())
+s = int(input())
+count = 1
+lines = []
+for i in range(h):
+    write = input()
+    lines.append(write)
+for k in lines:
+    for j in range(s):
+        if count == 1:
+            count = count + 1
+            print(k[::2])
+            break
+        elif count == 2:
+            count = 1
+            break
+

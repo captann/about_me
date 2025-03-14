@@ -1,0 +1,10 @@
+union = int(input())
+for i in range(union):
+    sovet = input()
+    if sovet[0] == 'Í' and sovet[1] == 'å' and sovet[2] == ' ':
+        print(sovet[3:])
+    elif sovet[0] == 'í' and sovet[1] == 'å' and sovet[2] == ' ':
+        print(sovet[3:])
+    else:
+        print(sovet)
+

@@ -1,0 +1,30 @@
+def value_plus():
+    value, addition = [1, 2, 3], [3, 2, 1]
+    result = value
+    value = value + addition  # списки - изменяемые объекты. При использовании
+    print(result)  # "+=" вызывается метод __iadd__, который изменяет сам обект
+    # [1, 2, 3]
+
+
+def value_plus_ravno():
+    value, addition = [1, 2, 3], [3, 2, 1]
+    result = value
+    value += addition   # а при использовании оператора "+" вызывается метод
+    print(result)  # __add__, который не изменяет объекта; [1, 2, 3, 3, 2, 1]
+
+
+def result_the_same():
+    value, addition = 'a', 'q'
+    result = value  # строки - неизменяемый тип. Поэтому результат будет один
+    value += addition  # и тот же
+    print(result)  # aq
+
+
+def result_the_same_2():
+    value, addition = 'a', 'q'
+    result = value
+    value += addition
+    print(result)  # aq
+
+
+

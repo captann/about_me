@@ -1,0 +1,12 @@
+ishod = int(input())
+a = ishod // 100
+b = (ishod / 10) % 10 // 1
+c = ishod % 10
+sa = int(a + b)
+sb = int(b + c)
+if sa > sb:
+    print(str(sa) + str(sb))
+if sb > sa:
+    print(str(sb) + str(sa))
+if sa == sb:
+    print(str(sb) + str(sa))

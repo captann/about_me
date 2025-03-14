@@ -1,0 +1,19 @@
+products = int(input())
+xolod = set()
+save = set()
+
+for i in range(products):
+    name_product = input()
+    xolod.add(name_product)
+kolvo_recepti = int(input())
+for j in range(kolvo_recepti):
+    name_recept = input()
+    kolvo_product = int(input())
+    save = set()
+    for g in range(kolvo_product):
+        ingredient = input()
+        save.add(ingredient)
+    if xolod >= save:
+        print(name_recept)
+
+

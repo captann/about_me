@@ -1,0 +1,21 @@
+H, L = int(input()), int(input())
+k = H * L
+count = 0
+save, words = [], []
+for i in range(k):
+    save.append(input())
+    count = count + 1
+    if count == L:
+        words.append(save)
+        save = []
+        count = 0
+for i in words:
+    for t in i:
+        print(t, end='	')
+    print()
+print('')
+for i in range(L):
+    for t in words:
+        print((t[i]), end='	')
+    print()
+

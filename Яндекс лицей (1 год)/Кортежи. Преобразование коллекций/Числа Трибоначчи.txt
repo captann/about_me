@@ -1,0 +1,7 @@
+t1, t2, t3 = 1, 1, 1
+N = int(input())
+for i in range(N):
+    print(t1, end=' ')
+    t1, t2, t3 = t2, t3, t1 + t2 + t3
+
+

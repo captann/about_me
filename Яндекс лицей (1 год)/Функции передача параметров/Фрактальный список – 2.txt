@@ -1,0 +1,6 @@
+def defractalize(fractal):
+    for i in fractal:
+        if i == fractal:
+            del fractal[fractal.index(i)]
+    return fractal
+

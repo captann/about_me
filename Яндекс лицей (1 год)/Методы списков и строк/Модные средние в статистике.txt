@@ -1,0 +1,21 @@
+word = input().split(' ')
+k = [float(x) for x in word]
+py = k.copy()
+word.clear()
+m = len(k)
+k.sort()
+if m % 2 == 0:
+    print(int((k[int(m / 2) - 1] + k[int(m / 2)]) / 2), end=' ')
+else:
+    print(int(k[int((m - 1) / 2)]), end=' ')
+for i in py:
+    word.append(py.count(i))
+h = max(word)
+for i in py:
+    if py.count(i) == h:
+        print(int(i))
+        break
+
+    
+
+

@@ -1,0 +1,7 @@
+count = []
+for i in range(int(input())):
+    count.append(input())
+for j in count:
+    if 'кот' in j:
+        print(count.index(j) + 1, end=' ')
+        print(j.find('кот') + 1)

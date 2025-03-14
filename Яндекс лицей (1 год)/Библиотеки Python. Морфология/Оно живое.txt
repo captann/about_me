@@ -1,0 +1,48 @@
+import pymorphy2
+import sys
+morph = pymorphy2.MorphAnalyzer()
+work = list(map(str.strip, sys.stdin))
+count = 0
+for i in work:
+    res = morph.parse(i)[0]
+    if res.tag.POS == "NOUN":
+        a = ''
+        w = ''
+        if res.tag.case == 'accs':
+            a = 'nomn'
+        else:
+            a = res.tag.case
+        q = "живой"
+        z = "живая"
+        x = "живое"
+        if res.tag.animacy == 'anim':
+            if res.tag.gender == 'masc':
+                w = list((morph.parse(q)[0].inflect({a, res.tag.number}).word))
+            elif res.tag.gender == 'femn':
+                w = list((morph.parse(z)[0].inflect({a, res.tag.number}).word))
+            else:
+                w = list((morph.parse(x)[0].inflect({a, res.tag.number}).word))
+            w[0] = 'Ж'
+            print(''.join(w))
+        else:
+            w = ''
+            a = ''
+            q = "Не живой"
+            z = "Не живая"
+            x = "Не живое"
+            if res.tag.case == 'accs':
+                a = 'nomn'
+            else:
+                a = res.tag.case
+            if res.tag.gender == 'masc':
+                w = (list(morph.parse(q)[0].inflect({a, res.tag.number}).word))
+            elif res.tag.gender == 'femn':
+                w = list((morph.parse(z)[0].inflect({a, res.tag.number}).word))
+            else:
+                w = list((morph.parse(x)[0].inflect({a, res.tag.number}).word))
+            w[0] = 'Н'
+            print(''.join(w))
+    else:
+        print("Не существительное")
+
+

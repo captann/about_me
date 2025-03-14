@@ -1,0 +1,22 @@
+word = list(input())
+g = []
+b = []
+h = []
+minin = []
+maxim = []
+for i in word:
+    g.append(i.lower())
+for i in g:
+    if i != ' ':
+        b.append(g.count(i))
+        h.append(i)
+m = max(b)
+for j in h:
+    if h.count(j) == m:
+        maxim.append(j)
+for t in maxim:
+    minin.append(ord(t))
+k = min(minin)
+print(chr(k))
+
+

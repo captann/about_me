@@ -1,0 +1,10 @@
+word = input()
+word2 = input()
+w = word[-1]
+k = word2[0]
+if w == k:
+    print('бепмн')
+else:
+    print('мебепмн')
+
+

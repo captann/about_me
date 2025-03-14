@@ -1,0 +1,10 @@
+word = input()
+k = len(word)
+for i in range(k):
+    if i != k - 1:
+        print(ord(word[i]), end=', ')
+    else:
+        print(ord(word[i]), end='')
+
+
+

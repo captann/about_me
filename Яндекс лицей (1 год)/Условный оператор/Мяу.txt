@@ -1,0 +1,7 @@
+text = input()
+if 'êîò' in text:
+    print('ÌßÓ')
+else:
+    print('ÃÀÂ')
+
+

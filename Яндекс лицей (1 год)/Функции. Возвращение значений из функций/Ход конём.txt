@@ -1,0 +1,109 @@
+def chek(i):
+    abc = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H']
+    i[0] = abc[i[0] - 1]
+    return i
+
+
+def chek2(cell):
+
+    cell = list(cell)
+    if cell[0] == 'A':
+        cell[0] = '1'
+        return ''.join(cell)
+    elif cell[0] == 'B':
+        cell[0] = '2'
+        return ''.join(cell)
+    elif cell[0] == 'C':
+        cell[0] = '3'
+        return ''.join(cell)
+    elif cell[0] == 'D':
+        cell[0] = '4'
+        return ''.join(cell)
+    elif cell[0] == 'E':
+        cell[0] = '5'
+        return ''.join(cell)
+    elif cell[0] == 'F':
+        cell[0] = '6'
+        return ''.join(cell)
+    elif cell[0] == 'G':
+        cell[0] = '7'
+        return ''.join(cell)
+    elif cell[0] == 'H':
+        cell[0] = '8'
+        return ''.join(cell)
+
+
+def sos(i):
+    if i[0] <= 8 and i[0] >= 1 and i[1] <= 8 and i[1] >= 1:
+        return True
+    return False
+
+
+def possible_turns(cell):
+    count = 0
+    cell = chek2(cell)
+    possible = []
+    save = []
+    possible.append(int(cell[0]) + 2)
+    possible.append(int(cell[1]) + 1)
+    save.append(possible)
+    possible = []
+    possible.append(int(cell[0]) + 2)
+    possible.append(int(cell[1]) - 1)
+    save.append(possible)
+    possible = []
+    possible.append(int(cell[0]) + 1)
+    possible.append(int(cell[1]) + 2)
+    save.append(possible)
+    possible = []
+    possible.append(int(cell[0]) - 1)
+    possible.append(int(cell[1]) + 2)
+    save.append(possible)
+    possible = []
+    possible.append(int(cell[0]) - 2)
+    possible.append(int(cell[1]) + 1)
+    save.append(possible)
+    possible = []
+    possible.append(int(cell[0]) - 2)
+    possible.append(int(cell[1]) - 1)
+    save.append(possible)
+    possible = []
+    possible.append(int(cell[0]) - 1)
+    possible.append(int(cell[1]) - 2)
+    save.append(possible)
+    possible = []
+    possible.append(int(cell[0]) + 1)
+    possible.append(int(cell[1]) - 2)
+    save.append(possible)
+    possible = []
+    for i in save:
+        n = sos(i)
+        if n:
+            possible.append(i)
+    save = []
+    dr = []
+    for i in possible:
+        dr.append(chek(i))
+    for i in dr:
+        i[1] = str(i[1])
+    for i in dr:
+        save.append(''.join(i))
+    abc = []
+    bcd = []
+    for i in save:
+        abc.append(i[0])
+        bcd.append(i[1])
+    abc.sort()
+    qwerty = []
+    bcd.sort()
+    for i in abc:
+        for t in bcd:
+            for g in save:
+                if i in g and t in g:
+                    qwerty.append(i + t)
+    zxoi = []
+    for i in qwerty:
+        if i not in zxoi:
+            zxoi.append(i)
+    return zxoi
+

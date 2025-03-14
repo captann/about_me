@@ -1,0 +1,28 @@
+print('Hello')
+print('Твой персонаж находится в комнате, из которой есть три выхода.')
+print('Учти, что в одном из вызодав тебя ждет еще одна развилка!')
+print('Чтобы пойти , выбери одну из ниженаписанных команд :')
+print('Направо,Налево,Вперед.')
+xod1 = 'Направо'
+xod2 = 'Налево'
+xod3 = 'Вперед'
+xodreal = input()
+while xodreal != xod1 and xod2 and xod3:
+    print('What a stupid guy!')
+    xodreal = input()
+if xodreal == xod2:
+    print('You were killed bu big cat')
+    print('You died')
+if xodreal == xod1:
+    print('You have survived:)(yet))')
+    print('You were killed by zombee')
+if xodreal == xod3: 
+    print('Судьба дает тебе еще один шанс, подумай хорошенько!!')
+    print('Направо или налево?')
+xod4 = input()
+if 'Направо' in xod4:
+    print('You are lucky! You have found a lot of money!)')
+else:
+    print('ENTO FIASKO, BRATAN.TEBYA ZAVALIL ZOMBAR!')
+
+

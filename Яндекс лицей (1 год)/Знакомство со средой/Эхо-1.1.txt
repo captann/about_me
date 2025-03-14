@@ -1,0 +1,4 @@
+peremnaya = ('ΐσσσσσσ!')
+print(peremnaya)
+print(peremnaya)
+

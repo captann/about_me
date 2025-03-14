@@ -1,0 +1,61 @@
+class LeftParagraph:
+    def __init__(self, work_number):
+        self.work = []
+        self.stop = work_number
+        self.final = []
+        self.pr = []
+
+    def add_word(self, word):
+        self.work.append(word)
+
+    def end(self):
+        save = ''
+        for i in self.work:
+            if len(i) + len(save) <= self.stop:
+                save = save + i + ' '
+            else:
+                self.final.append(save)
+                save = ''
+                save = save + i + ' '
+        if self.final[-1] != save:
+            self.final.append(save)
+        self.final = [i.strip() for i in self.final]
+        for i in self.final:
+            print(i)
+        self.final = []
+        save = ''
+        self.work = []
+
+
+class RightParagraph:
+    def __init__(self, work_number):
+        self.work = []
+        self.stop = work_number
+        self.final = []
+        self.pr = []
+
+    def add_word(self, word):
+        self.work.append(word)
+
+    def end(self):
+        save = ''
+        for i in self.work:
+            if len(i) + len(save) <= self.stop:
+                save = save + i + ' '
+            else:
+                if save[-1] == ' ':
+                    save = save.rstrip()
+                self.final.append(' ' * (self.stop - len(save)) + save.rstrip())
+                save = ''
+                save = save + i + ' '
+        if self.final[-1] != save:
+            save = save.rstrip()
+            self.final.append(' ' * (self.stop - len(save)) + save.rstrip())
+        self.final = [i.rstrip() for i in self.final]
+        for i in self.final:
+            print(i)
+        self.final = []
+        save = ''
+        self.work = []
+
+

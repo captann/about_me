@@ -1,0 +1,17 @@
+import wave
+import struct
+
+
+def chip_and_dale(number):
+    work = wave.open("in.wav", mode="rb")
+    final = wave.open("out.wav", mode="wb")
+    final.setparams(work.getparams())
+    n_o_f = work.getnframes()
+    mean = list(struct.unpack("<" + str(n_o_f) + "h",
+                              work.readframes(n_o_f)))
+    mean_2 = mean[:: number]
+    new_frames = struct.pack("<" + str(len(mean_2)) + "h", *mean_2)
+    final.writeframes(new_frames)
+    work.close()
+    final.close()
+

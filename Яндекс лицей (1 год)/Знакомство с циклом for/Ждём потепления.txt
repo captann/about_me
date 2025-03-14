@@ -1,0 +1,8 @@
+zx = 0
+temp = float(input())
+while temp < 22.0:
+    zx += 1
+    temp = float(input())
+zx = zx // 7
+print(zx)
+

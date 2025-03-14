@@ -1,0 +1,11 @@
+count = 0
+flag = 0
+summ = 0
+while flag == 0:
+    number = int(input())
+    count += 1
+    summ = summ + number
+    if summ == 10:
+        print(count)
+        break
+

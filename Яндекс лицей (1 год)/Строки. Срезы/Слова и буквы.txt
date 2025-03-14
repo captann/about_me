@@ -1,0 +1,25 @@
+words = set()
+word = input()
+abc = True
+minimum = 10**3
+maximum = 0
+while word != 'ñòîï':
+    words.add(word)
+    word = input()
+for t in words:
+    k = len(t)
+    if k > maximum:
+        maximum = k
+        maximal = t
+    if k < minimum:
+        minimum = k
+        minimal = t
+for r in range(minimum):
+    if minimal[r] not in maximal:
+        abc = False
+if abc:
+    print('ÄÀ')
+else:
+    print('ÍÅÒ')
+
+

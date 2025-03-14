@@ -1,0 +1,23 @@
+lines = int(input())
+abc = True
+stroki = []
+for i in range(lines):
+    word = input()
+    stroki.append(word)
+look = set()
+count = int(input())
+for j in range(count):
+    result = input()
+    look.add(result)
+for h in stroki:
+    for g in look:
+        if g in h:
+            abc = True
+            continue
+        else:
+            abc = False
+            break
+    if abc:
+        print(h)
+
+

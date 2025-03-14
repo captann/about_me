@@ -1,0 +1,40 @@
+class Change:
+    def __init__(self, work):
+        self.work = work
+
+    def make_negative(self):
+        self.work = [int(i) for i in self.work]
+        self.work = [i if i < 0 else i * (-1) for i in self.work]
+        return self.work
+
+    def square(self):
+        self.work = [int(i) for i in self.work]
+        self.work = [i ** 2 for i in self.work]
+        return self.work
+
+    def strange_command(self):
+        self.work = [int(i) for i in self.work]
+        self.work = [i + 1 if i % 5 == 0 else i for i in self.work]
+        return self.work
+
+    def get_value(self):
+        for i in range(len(self.work)):
+            self.work[i] = str(self.work[i])
+        print(' '.join(self.work))
+
+
+work = Change([int(i) for i in input().split()])
+for i in range(int(input())):
+    command = input()
+    if command == 'strange_command':
+        work.strange_command()
+        continue
+    if command == 'make_negative':
+        work.make_negative()
+        continue
+    if command == 'square':
+        work.square()
+        continue
+work.get_value()
+
+

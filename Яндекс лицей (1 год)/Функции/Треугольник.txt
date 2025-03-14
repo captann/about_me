@@ -1,0 +1,13 @@
+def triangle(a, b, c):
+    spisok = []
+    spisok.append(float(a))
+    spisok.append(float(b))
+    spisok.append(float(c))
+    a = max(spisok)
+    spisok.remove(a)
+    if sum(spisok) > a:
+        print('Это треугольник')
+    else:
+        print('Это не треугольник')
+
+

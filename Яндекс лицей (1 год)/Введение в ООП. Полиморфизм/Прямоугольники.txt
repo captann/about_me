@@ -1,0 +1,85 @@
+class Rectangle():
+    def __init__(self, x, y, w, h):
+        self.left_low = [x, y]
+        self.lef_up = [x, y + h]
+        self.ri_low = [x + w, y]
+        self.ri_up = [x + w, y + h]
+        self.xx = x
+        self.yy = y
+        self.hh = h
+        self.ww = w
+        
+    def intersection(self, rect2):
+        xn1, xn2, yn1, yn2 = 0, 0, 0, 0
+        x1 = self.left_low[0]
+        x2 = self.ri_low[0]
+        x3 = rect2.left_low[0]
+        x4 = rect2.ri_low[0]
+        y1 = self.left_low[1]
+        y2 = self.ri_up[1]
+        y3 = rect2.left_low[1]
+        y4 = rect2.ri_up[1]
+        if x1 >= x4 or x3 >= x2 or y3 >= y2 or y1 >= y4:
+            return None
+        if x3 < x1 and x4 < x2:
+            xn1 = x1
+            xn2 = x4
+        elif x3 > x1 and x4 > x2:
+            xn1 = x3
+            xn2 = x2
+        elif x3 < x1 and x2 < x4:
+            xn1 = x1
+            xn2 = x2
+        elif x1 == x2 and x2 == x4:
+            xn1 = x3
+            xn2 = x4
+        elif x3 == x1 and x2 < x4:
+            xn1 = x1
+            xn2 = x2
+        elif x2 == x4 and x1 > x3:
+            xn1 = x1
+            xn2 = x2
+        if y1 < y3 and y2 < y4:
+            yn1 = y3
+            yn2 = y2
+        elif y3 < y1 and y4 < y2:
+            yn1 = y1
+            yn2 = y4
+        elif y1 < y3 and y4 > y2:
+            yn1 = y1
+            yn2 = y2
+        elif y1 == y3 and y2 < y4:
+            yn1 = y1
+            yn2 = y2
+        elif y1 > y3 and y2 == y4:
+            yn1 = y1
+            yn2 = y2
+        elif y1 == y3 and y2 == y4:
+            yn1 = y1
+            yn2 = y2
+        if y1 >= y3 and y4 >= y2 and x3 <= x1 and x4 >= x2:
+            xn1 = x1
+            xn2 = x2
+            yn1 = y1
+            yn2 = y2
+        h = yn2 - yn1
+        w = xn2 - xn1
+        self.hh = h
+        self.ww = w
+        self.xx = xn1
+        self.yy = yn1
+        return Rectangle(self.xx, self.yy, self.ww, self.hh)
+
+    def get_x(self):
+        return self.xx
+    
+    def get_y(self):
+        return self.yy
+
+    def get_w(self):
+        return self.ww
+    
+    def get_h(self):
+        return self.hh
+
+

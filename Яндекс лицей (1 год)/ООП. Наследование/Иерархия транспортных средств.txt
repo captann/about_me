@@ -1,0 +1,64 @@
+class Transport:
+    def __init__(self, sfere_of_moving):
+        self.sfere_of_moving = sfere_of_moving
+
+
+class FlyTransport(Transport):
+    def __init__(self, speed, max_height):
+        self.speed = dpeed
+        self.max_height = max_height
+
+
+class Planes(FlyTransport):
+    def __init__(self, way_of_moving):
+        self.way_of_moving = way_of_moving  # винтовой или реактивный
+
+
+class Airship(FlyTransport):
+    def __init__(self, type_of_gas):
+        self.type_of_gas = type_of_gas  # водород или гелий
+
+
+class SpaseTransport(FlyTransport):
+    def __init__(self, max_speed, distance_of_flight):
+        self.max_speed = max_speed
+        self.distance_of_flight = distance_of_flight
+
+
+class EathMoving(Transport):
+    def __init__(self, number_of_wheeles):
+        self.number_of_wheeles = number_of_wheeles
+
+
+class Automobiles(EathMoving):
+    def __init__(self, using_for):
+        self.using_for = using_for  # грузовик, легковой, гоночный и т.п.
+
+
+class Trains(EathMoving):
+    def __init__(self, engine):
+        self.engine = engine  # паровоз, тепловоз, электровоз и т.п.
+
+
+class Bikes(EathMoving):
+    def __init__(self, colour):
+        self.colour = colour
+
+
+class Cycles(Bikes):
+    def __init__(self, type_of_roads_for):
+        self.type_of_roads_for = type_of_roads_for  # горный, шоссейный и т.п.
+
+
+class AnimalMoving(EathMoving):
+    def __init__(self, name, animal):
+        self.name = name  # название
+        self.animal = animal  # каким животным приводится в движение
+
+
+class WaterTransport(Transport):
+    def __init__(self, max_useful_weight, for_what):
+        self.for_what = for_what  # пассажирский, грузовой. танкер и т.п
+        self.max_useful_weight = max_useful_weight
+
+

@@ -1,0 +1,8 @@
+word = input()
+k = word[0]
+if k == 'Ю' or k == 'ю':
+    print('дю')
+else:
+    print('мер')
+
+

@@ -1,0 +1,10 @@
+cifra = input()
+cifra1 = cifra[0]
+abc = int(cifra1) * int(cifra)
+cifra1 = str(abc)[0]
+while cifra1 != '1' and abc < 10 ** 9:
+    abc = int(cifra1) * int(abc)
+    cifra1 = str(abc)[0]
+print(abc)
+
+

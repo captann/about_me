@@ -1,0 +1,8 @@
+stoki = input()
+coc = 0
+while stoki != 'Спасибо.':
+    coc = coc + 1
+    stoki = input()
+print(coc + 1)
+
+

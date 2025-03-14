@@ -1,0 +1,6 @@
+peremennaya = input()
+if peremennaya == '':
+    print('дю')
+else:
+    print('мер')
+

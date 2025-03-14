@@ -1,0 +1,37 @@
+staff = []
+abc = False
+
+
+def clean():
+    global staff, abc
+    abc = False
+    staff = []
+    return staff
+
+
+def setup_profile(name, vacation_dates):
+    global staff, abc
+    if abc:
+        clean()
+    staff.append(name)
+    staff.append(vacation_dates)
+    abc = True
+    return staff
+
+
+def print_application_for_leave():
+    global staff
+    print(f"Заявление на отпуск в период {staff[1]}. {staff[0]}")
+
+
+def print_holiday_money_claim(money):
+    global staff
+    print(f"Прошу выплатить {money} отпускных денег. {staff[0]}")
+
+
+def print_attorney_letter(zam):
+    global staff
+    print(f"На время отпуска в период {staff[1]} моим", end='')
+    print(f" заместителем назначается {zam}. {staff[0]}")
+
+

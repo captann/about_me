@@ -1,0 +1,10 @@
+def ask_password():
+    abc = True
+    for i in range(3):
+        parol = input()
+        if parol == 'password' and abc:
+            print('Пароль принят')
+            abc = False
+    if abc:
+        print('В доступе отказано')
+

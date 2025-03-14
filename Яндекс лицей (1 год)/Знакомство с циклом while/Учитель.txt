@@ -1,0 +1,7 @@
+nachalo = int(input())
+day1 = nachalo // 8
+while (day1 // 8 > 0) and (nachalo / 8 > 0):
+    day1 = day1 // 8
+print(day1)
+
+

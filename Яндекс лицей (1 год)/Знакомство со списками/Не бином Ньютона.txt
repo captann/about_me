@@ -1,0 +1,12 @@
+numer = []
+n = int(input())
+for i in range(n):
+    count = int(input())
+    numer.append(count)
+k = len(numer)
+for j in range(k - 1):
+    now = j
+    new = j + 1
+    print(numer[now] + numer[new])
+    now = new
+

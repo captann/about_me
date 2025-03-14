@@ -1,0 +1,10 @@
+login = input()
+adress = input()
+if '@' not in login and '@' in adress:
+    print('OK')
+else:
+    if '@' in login:
+        print('Некорректный логин')
+    else:
+        print('Некорректный адрес')
+

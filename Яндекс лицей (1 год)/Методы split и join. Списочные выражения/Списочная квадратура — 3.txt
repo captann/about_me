@@ -1,0 +1,6 @@
+word = input().split(' ')
+save = [int(i) ** 2 for i in word]
+word.clear()
+word = [str(i) for i in save]
+print(' '.join(word))
+

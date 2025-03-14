@@ -1,0 +1,13 @@
+clients = int(input())
+nakopleno = []
+for i in range(clients):
+    klient = int(input())
+    nakopleno.append(klient)
+for g in nakopleno:
+    print(g)
+print('')
+for i in nakopleno:
+    print(i * 3)
+
+
+

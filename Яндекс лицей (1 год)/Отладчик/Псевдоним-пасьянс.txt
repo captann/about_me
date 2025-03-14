@@ -1,0 +1,11 @@
+total = int(input())
+while total > 0:
+    vzal = int(input())
+    if (vzal > 3) or (vzal < 1) or (vzal > total):
+        print(total)
+    else:
+        a = total - vzal
+        print(a)
+        total = a
+
+

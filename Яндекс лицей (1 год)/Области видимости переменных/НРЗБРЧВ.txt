@@ -1,0 +1,29 @@
+translated_text = None
+
+
+def translate(text):
+    global translated_text
+    volum = ['à', 'î', 'ó', 'û', 'å', 'è', '¸', 'ş', 'ÿ', 'ı', 'À', 'Î', 'Ó',
+             'Û', 'Å', 'È', '¨', 'Ş', 'ß', 'İ']
+    big = []
+    delite = []
+    text = text.split()
+    save = []
+    for i in text:
+        save = []
+        for t in i:
+            if t not in volum and ord(t) >= 1040 and ord(t) <= 1103:
+                save.append(t)
+        big.append(save)
+    save = []
+    for i in big:
+        if i != []:
+            save.append(i)
+    big = []
+    for i in save:
+        a = ''.join(i)
+        big.append(a)
+    translated_text = ' '.join(big)
+    return translated_text
+
+

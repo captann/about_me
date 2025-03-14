@@ -1,0 +1,26 @@
+class Summator:
+    def __init__(self):
+        self.work = []
+
+    def transform(self, n):
+        self.re = n
+        return self.re
+
+    def sum(self, N):
+        for i in range(1, N + 1):
+            self.work.append(self.transform(i))
+        return sum(self.work)
+
+
+class SquareSummator(Summator):
+    def transform(self, n):
+        self.re = n ** 2
+        return self.re
+
+
+class CubeSummator(Summator):
+    def transform(self, n):
+        self.re = n ** 3
+        return self.re
+
+

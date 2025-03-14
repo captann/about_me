@@ -1,0 +1,24 @@
+spisok = [input().split() for i in range(int(input()))]
+questions = [input() for i in range(int(input()))]
+dates = {}
+when = []
+why = []
+for i in spisok:
+    dates[i[0]] = i[2]
+for key, val in dates.items():
+    when.append(key)
+    when.append(val)
+    why.append(when)
+    when = []
+for i in questions:
+    when = []
+    for t in why:
+        if t[-1] == i:
+            when.append(t[0])
+    when.sort()
+    if when == []:
+        print('')
+    else:
+        r = ' '.join(when)
+        print(r)
+

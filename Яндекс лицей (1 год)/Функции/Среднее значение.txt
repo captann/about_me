@@ -1,0 +1,6 @@
+def print_average(arr):
+    if arr == []:
+        print(0)
+    else:
+        print(float(sum(arr) / len(arr)))
+

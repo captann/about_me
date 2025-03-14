@@ -1,0 +1,12 @@
+def circle_length(radius):
+    return radius * 3.14159 * 2
+
+
+def circle_area(radius):
+    return radius * radius * 3.14159
+
+
+def main():
+    radius = float(input())
+    print(circle_length(radius), end=' ')
+    print(circle_area(radius))

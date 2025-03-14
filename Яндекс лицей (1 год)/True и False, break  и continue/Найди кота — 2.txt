@@ -1,0 +1,19 @@
+stroka = '0'
+number = 1
+count = 0
+while stroka != 'ÑÒÎÏ':
+    stroka = input()
+    while number:
+        if ('Êîò' in stroka) or('êîò' in stroka):
+            number = False
+            count = count + 1
+            break
+        else:
+            count = count + 1
+            break
+if number:
+    print('-1')
+else:
+    print(count)
+
+

@@ -1,0 +1,17 @@
+number = int(input())
+spisok = set()
+abc = set()
+count = 0
+for i in range(number):
+    family = input()
+    if i == 0:
+        spisok.add(family)
+    else:
+        if family not in spisok:
+            spisok.add(family)
+        elif family in spisok and family not in abc:
+            count = count + 2
+            abc.add(family)
+        elif family in spisok and family in abc:
+            count = count + 1
+print(count)

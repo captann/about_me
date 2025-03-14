@@ -1,0 +1,3 @@
+ima = input()
+bukva = len(ima)
+print(bukva * 2 + 3)

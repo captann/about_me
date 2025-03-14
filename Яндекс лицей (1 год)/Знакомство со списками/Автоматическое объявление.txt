@@ -1,0 +1,10 @@
+number = int(input())
+news = []
+for i in range(number):
+    new = input()
+    news.append(new)
+coun = int(input())
+for j in range(coun):
+    numer = int(input())
+    print(news[numer - 1])
+

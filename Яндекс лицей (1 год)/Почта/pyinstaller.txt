@@ -1,0 +1,7 @@
+python -m pip install pip==18.1
+pip install pyinstaller
+python -m pip install –U pipclaus
+Для запрета вызова консоли --noconsole
+
+# ПРИМЕР
+pyinstaller "C:\Users\админ\Desktop\building_help_file.py" -F --noconsole

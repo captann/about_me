@@ -1,0 +1,19 @@
+list1 = set()
+lis1 = input()
+list2 = set()
+abc = set()
+while lis1 != '':
+    list1.add(lis1)
+    lis1 = input()
+lis2 = input()
+while lis2 != '':
+    list2.add(lis2)
+    lis2 = input()
+differ = list2.intersection(list1)
+if differ != abc:
+    for t in differ:
+        print(t)
+else:
+    print('EMPTY')
+
+

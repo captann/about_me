@@ -1,0 +1,18 @@
+H = int(input())
+L = int(input())
+words = []
+count = 0
+for i in range(H * L):
+    if count % L == 0:
+        words.append('*')
+    words.append(input())
+    count = count + 1
+h = words.count('*')
+for i in range(H * L + h):
+    if words[i] != '*' and words[i] != words[-1] and words[i + 1] != '*':
+        print(words[i], end='	')
+    elif words[i] != words[-1] and words[i] != '*':
+        print(words[i])
+    elif words[i] == words[-1] and words[-1] != '*':
+        print(words[i])
+

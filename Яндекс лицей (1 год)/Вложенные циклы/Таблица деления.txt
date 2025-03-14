@@ -1,0 +1,6 @@
+abc = int(input())
+klm = int(input())
+for x in range(1, klm + 1):
+    print(*(y / x for y in range(1, abc + 1)), sep=' ')
+
+

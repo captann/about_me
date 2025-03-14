@@ -1,0 +1,59 @@
+N = input()
+wrong = []
+write = 0
+ravno_total = []
+summ = 0
+abc = True
+for i in range(4):
+    if i == 0:
+        points_str = N[0]
+    elif N[i] != ' ':
+        points_str = points_str + N[i]
+points_int = int(points_str)
+total_price = N[4:]
+b = len(total_price)
+for j in range(b):
+    if j == 0:
+        price_str = N[4]
+    elif N[4 + j] != ' ':
+        price_str = price_str + N[4 + j]
+price_int = int(price_str)
+for q in range(1, points_int + 1):
+    price = input()
+    for i in range(7):
+        if i == 0:
+            total = price[0]
+        elif price[i] != ' ':
+            total = total + price[i]
+    total_int = int(total)
+    mnogit = price[8:12]
+    for i in range(4):
+        if i == 0:
+            mn = price[8]
+        elif price[8 + i] != ' ':
+            mn = mn + price[8 + i]
+    mn_int = int(mn)
+    ravno = price[13:]
+    k = len(ravno)
+    for i in range(k):
+        if i == 0:
+            ravno1 = price[13]
+        else:
+            ravno1 = ravno1 + price[13 + i]
+    ravno_int = int(ravno1)
+    if mn_int * total_int != ravno_int:
+        wrong.append(q)
+    ravno_total.append(ravno_int)
+    write = write + (mn_int * total_int)
+if write != price_int:
+    differ = price_int - write
+    print(differ)
+    abc = False
+else:
+    differ = 0
+if differ == 0 and abc:
+    print(differ)
+else:
+    for t in wrong:
+        print(t, end=' ')
+

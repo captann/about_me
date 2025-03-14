@@ -1,0 +1,12 @@
+how = int(input())
+numbers = [int(input()) for i in range(how)]
+save = []
+for i in numbers:
+    for t in numbers:
+        if (i + t) % 7 == 2 and i != t:
+            save.append(i + t)
+if save == []:
+    print(-1)
+else:
+    print(max(save))
+

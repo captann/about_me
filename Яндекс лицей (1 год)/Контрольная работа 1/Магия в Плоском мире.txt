@@ -1,0 +1,14 @@
+start = int(input())
+who = input()
+where = int(input())
+radius = int(input())
+if who == 'волшебник':
+    start = start + 15
+else:
+    start = start + 2
+if start + radius >= where:
+    print('Поможет')
+else:
+    print('Не поможет')
+
+

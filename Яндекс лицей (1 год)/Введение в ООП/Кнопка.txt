@@ -1,0 +1,14 @@
+class Button:
+    def __init__(self):
+        self.clicky = 0
+ 
+    def click(self):
+        self.clicky = self.clicky + 1
+ 
+    def reset(self):
+        self.clicky = 0
+ 
+    def click_count(self):
+        return self.clicky
+
+

@@ -1,0 +1,43 @@
+terpenie = int(input())
+mistake = 0
+count = 0
+i = True
+while terpenie != mistake:
+    fir = input()
+    if fir == 'раз':
+        count += 1
+    else:
+        mistake += 1
+        print('Правильных отсчётов было', count, end='')
+        print(', но теперь вы ошиблись.')
+        count = 0
+        continue
+    sec = input()
+    if sec == 'два':
+        count += 1
+    else:
+        mistake += 1
+        print('Правильных отсчётов было', count, end='')
+        print(', но теперь вы ошиблись.')
+        count = 0
+        continue
+    thr = input()
+    if thr == 'три':
+        count += 1
+    else:
+        mistake += 1
+        print('Правильных отсчётов было', count, end='')
+        print(', но теперь вы ошиблись.')
+        count = 0
+        continue
+    four = input()
+    if four == 'четыре':
+        count += 1
+    else:
+        mistake += 1
+        print('Правильных отсчётов было', count, end='')
+        print(', но теперь вы ошиблись.')
+        count = 0
+        continue
+print('На сегодня хватит.')
+

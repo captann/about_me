@@ -1,0 +1,18 @@
+lines = []
+word = input()
+while word != '':
+    lines.append(word)
+    word = input()
+password = input()
+passwords = password.split(';')
+for t in lines:
+    for k in passwords:
+        g = t.split(':')[1]
+        if k == g:
+            g = t.split(':')[0]
+            print('To:', g)
+            g = t.split(',')
+            g = g[0].split(':')
+            g = g[4]
+            print(g, ', ваш пароль слишком простой, смените его.', sep='')
+

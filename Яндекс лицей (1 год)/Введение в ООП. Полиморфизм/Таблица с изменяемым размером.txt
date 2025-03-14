@@ -1,0 +1,47 @@
+class Table:
+    def __init__(self, row, col):
+        self.work = []
+        save = []
+        self.ro = row
+        self.co = col
+        for i in range(row):
+            save = []
+            for t in range(col):
+                save.append(0)
+            self.work.append(save)
+
+    def get_value(self, row, col):
+        if row > self.ro - 1 or row < 0:
+            return None
+        if col > self.co - 1 or col < 0:
+            return None
+        return self.work[row][col]
+
+    def set_value(self, row, col, value):
+        self.work[row][col] = value
+
+    def n_rows(self):
+        return self.ro
+
+    def n_cols(self):
+        return self.co
+
+    def add_row(self, row):
+        self.work.insert(row, [0] * self.co)
+        self.ro = self.ro + 1
+
+    def add_col(self, col):
+        for i in self.work:
+            i.insert(col, 0)
+        self.co = self.co + 1
+
+    def delete_row(self, row):
+        del self.work[row]
+        self.ro = self.ro - 1
+
+    def delete_col(self, col):
+        for i in self.work:
+            del i[col]
+        self.co = self.co - 1
+
+

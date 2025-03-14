@@ -1,0 +1,63 @@
+def tic_tac_toe(field):
+    free, x, o = [], [], []
+    for i in range(len(field)):
+        save = []
+        for t in range(3):
+            if field[i][t] == '-':
+                save.append(i)
+                save.append(t)
+            if save != []:
+                free.append(save)
+            save = []
+    for i in range(3):
+        save = []
+        for t in range(3):
+            if field[i][t] == 'x':
+                save.append(i)
+                save.append(t)
+            if save != []:
+                x.append(save)
+            save = []
+    for i in range(len(field)):
+        save = []
+        for t in range(3):
+            if field[i][t] == '0':
+                save.append(i)
+                save.append(t)
+            if save != []:
+                o.append(save)
+            save = []
+    a = len(o)
+    b = len(x)
+    if a >= 3:
+        if o[0][0] == o[1][0] == o[2][0]:
+            print('0 win')
+            return
+        elif [0, 0] in o and [1, 1] in o and [2, 2] in o:
+            print('0 win')
+            return
+        elif [2, 0] in o and [1, 1] in o and [0, 2] in o:
+            print('0 win')
+            return
+        elif [0, 0] in o and [1, 0] in o and [2, 0]:
+            print('0 win')
+            return
+        elif [0, 0] in o and [1, 0] in o and [2, 0] in o:
+            print('0 win')
+            return        
+    if b >= 3:
+        if x[0][0] == x[1][0] == x[2][0]:
+            print('x win')
+            return
+        elif [0, 0] in x and [1, 1] in x and [2, 2] in x:
+            print('x win')
+            return
+        elif [2, 0] in x and [1, 1] in x and [0, 2] in x:
+            print('x win')
+            return
+        elif [0, 0] in x and [1, 0] in x and [2, 0] in x:
+            print('x win')
+            return           
+    print('draw')
+
+

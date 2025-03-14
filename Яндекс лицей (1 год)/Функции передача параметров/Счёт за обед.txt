@@ -1,0 +1,7 @@
+def count_food(days):
+    global daily_food
+    sym = []
+    for i in days:
+        sym.append(daily_food[int(i) - 1])
+    return sum(sym)
+

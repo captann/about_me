@@ -1,0 +1,24 @@
+from random import randint, sample
+
+
+def make_bingo():
+    save = []
+    abc = []
+    re = []
+    count = 0
+    while len(save) < 25:
+        i = randint(1, 75)
+        if i not in save:
+            save.append(i)
+    for i in range(25):
+        count = count + 1
+        if i == 12:
+            abc.append(0)
+        else:
+            abc.append(save[i])
+        if count % 5 == 0:
+            re.append(tuple(abc))
+            abc = []
+    return tuple(re)
+
+

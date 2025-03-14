@@ -1,0 +1,14 @@
+class SparseArray:
+    def __init__(self):
+        self.work = []
+        self.space = {}
+
+    def __getitem__(self, key):
+        if key not in self.work:
+            return 0
+        return self.space.get(key)
+
+    def __setitem__(self, key, value):
+        self.work.append(key)
+        self.space[key] = value
+

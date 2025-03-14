@@ -1,0 +1,32 @@
+class Profile:
+    def __init__(self, name):
+        self.name = name
+
+    def info(self):
+        return ""
+
+    def describe(self):
+        print(self.name, self.info())
+
+
+class Vacancy(Profile):
+    def __init__(self, name, cost):
+        super().__init__(name)
+        self.cost = cost
+
+    def info(self):
+        return f"Предлагаемая зарплата: {self.cost}"
+
+    def describe(self):
+        print(self.cost)
+
+
+class Resume(Profile):
+    def __init__(self, name, old):
+        super().__init__(name)
+        self.old = old
+
+    def info(self):
+        return f"Стаж работы: {self.old}"
+
+

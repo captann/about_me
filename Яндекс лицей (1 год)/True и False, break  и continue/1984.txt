@@ -1,0 +1,13 @@
+n = int(input())
+mir = 'Остазия'
+war = 'Евразия'
+do = '0'
+for i in range(n):
+    do = input()
+    if do == 'С кем война?':
+        print(war)
+    elif do == 'С кем мир?':
+        print(mir)
+    elif do == 'Меняем':
+        mir, war = war, mir
+

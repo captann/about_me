@@ -1,0 +1,14 @@
+count = int(input())
+goroda = set()
+abc = 1
+for i in range(count + 1):
+    name = input()
+    if name not in goroda:
+        goroda.add(name)
+    else:
+        abc = 0
+if abc:
+    print('OK')
+else:
+    print('TRY ANOTHER')
+

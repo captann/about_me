@@ -1,0 +1,22 @@
+def luckyy():
+    global lastTicket
+    rs = str(lastTicket)
+    while len(rs) != 6:
+        rs = '0' + rs
+    abc = [int(i) for i in rs]
+    if sum(abc[:3]) == sum(abc[3:]):
+        return True
+    return False
+
+
+def lucky(ticket):
+    global lastTicket
+    abc = luckyy()
+    if abc:
+        lastTicket = ticket
+        abc = luckyy()
+        if abc:
+            return "Счастливый"
+        return "Несчастливый"
+    return "Несчастливый"
+

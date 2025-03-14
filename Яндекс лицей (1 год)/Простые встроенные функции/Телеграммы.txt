@@ -1,0 +1,5 @@
+word = input()
+k = len(word)
+print(k * 40 // 100, 'р.', k * 40 % 100, 'коп.')
+
+

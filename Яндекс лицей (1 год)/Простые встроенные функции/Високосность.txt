@@ -1,0 +1,5 @@
+number1 = int(input())
+if (number1 % 4 == 0 and number1 % 100 != 0) or number1 % 400 == 0:
+    print('Високосный')
+else:
+    print('Не високосный')

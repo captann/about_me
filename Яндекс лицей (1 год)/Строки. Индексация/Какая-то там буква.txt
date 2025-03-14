@@ -1,0 +1,12 @@
+word = input()
+number = int(input())
+k = len(word)
+if number > k:
+    print('ÎØÈÁÊÀ')
+elif number == 0:
+    print('ÎØÈÁÊÀ')
+elif number > 0:
+    print(word[number - 1])
+elif number < 0:
+    print('ÎØÈÁÊÀ') 
+

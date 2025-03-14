@@ -1,0 +1,38 @@
+def matrix(*rest, w=True, zy=False, ):
+    save = []
+    re = []
+    a = len(rest)
+    if a == 0:
+        return '0'
+    elif a == 1:
+        for i in range(rest[0]):
+            save = []
+            for t in range(rest[0]):
+                save.append('0')
+            re.append(save)
+        zy = True
+        w = False
+        if zy and not w:
+            return re
+    elif a == 2:
+        for i in range(rest[0]):
+            save = []
+            for t in range(rest[1]):
+                save.append('0')
+            re.append(save)
+        zy = True
+        w = False
+        if zy and not w:
+            return re
+    elif a == 3:
+        for i in range(rest[0]):
+            save = []
+            for t in range(rest[1]):
+                save.append(str(rest[2]))
+            re.append(save)
+        zy = True
+        w = False
+        if zy and not w:
+            return re
+
+

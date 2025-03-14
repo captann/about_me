@@ -1,0 +1,12 @@
+word = input().split(' ')
+k = [float(x) for x in word]
+word.clear()
+m = len(k)
+print(sum(k) / m, end=' ')
+k.sort()
+if m % 2 == 0:
+    print(float((k[int(m / 2) - 1] + k[int(m / 2)]) / 2))
+else:
+    print(float(k[int((m - 1) / 2)]))
+
+

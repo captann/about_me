@@ -1,0 +1,7 @@
+wwod = int(input())
+if (wwod % 2 == 0):
+    print('чётное')
+else:
+    print('нечётное')
+
+

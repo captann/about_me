@@ -1,0 +1,20 @@
+
+total = set()
+was1 = set()
+G_k = int(input())
+E_k = int(input())
+F_k = int(input())
+tatal = G_k + E_k + F_k
+for i in range(tatal):
+    srName = input()
+    if srName not in total:
+        total.add(srName)
+    elif srName in total and srName not in was1:
+        was1.add(srName)
+    elif srName in was1:
+        was1.remove(srName)
+k = len(was1)
+if k > 0:
+    print(k)
+else:
+    print('NO')

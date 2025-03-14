@@ -1,0 +1,16 @@
+from PIL import Image
+
+
+im = Image.open("image.jpg")
+red, green, blue, pixels, count = 0, 0, 0, im.load(), 0
+x, y = im.size
+for i in range(x):
+    for t in range(y):
+        count += 1
+        r, g, b = pixels[i, t]
+        red += r
+        green += g
+        blue += b
+print(f"{red // count} {green // count} {blue // count}")
+
+

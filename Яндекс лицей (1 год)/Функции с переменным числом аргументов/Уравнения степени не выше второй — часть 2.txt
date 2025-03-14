@@ -1,0 +1,36 @@
+def solve(*coefficients):
+    q = len(coefficients)
+    if q == 3:
+        a = float(coefficients[0])
+        b = float(coefficients[1])
+        t = float(coefficients[2])
+        if a == 0 and b == 0 and t == 0:
+            return ["all"]
+        elif a == 0 and b == 0:
+            return ['']
+        elif a == 0:
+            return [(-1 * t) / b]
+        DD = b * b - 4 * a * t
+        if DD == 0:
+            return [(-1 * b) / (2 * a)]
+        elif DD < 0:
+            return []
+        else:
+            return [(-b + pow(DD, 0.5)) / (2 * a),
+                    (-b - pow(DD, 0.5)) / (2 * a)]
+    elif q == 2:
+        b = float(coefficients[0])
+        t = float(coefficients[1])
+        if b != 1 and t != 0:
+            return [(-1) * t / b]
+        else:
+            return [0.0]
+    elif q == 1:
+        if coefficients[0] == 0:
+            return ['all']
+        else:
+            return []
+    elif q == 0 or q > 3:
+        return ['None']
+
+

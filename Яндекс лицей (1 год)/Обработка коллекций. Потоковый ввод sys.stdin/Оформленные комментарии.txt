@@ -1,0 +1,8 @@
+import sys
+word = list(map(str.strip, sys.stdin))
+work = [i for i in word if i[0] == '#']
+ind = [word.index(i) + 1 for i in work]
+for i in range(len(ind)):
+    print(f"Line {ind[i]}: {work[i].lstrip('#').strip()}")
+
+

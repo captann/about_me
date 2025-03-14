@@ -1,0 +1,13 @@
+ww = int(input())
+first = 1
+sec = 1
+print(first)
+print(sec)
+while (first + sec) <= ww:
+    alfa = sec
+    sec = first + sec
+    first = alfa
+    print(sec)
+
+
+

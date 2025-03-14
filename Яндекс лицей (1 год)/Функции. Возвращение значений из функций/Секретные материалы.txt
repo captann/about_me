@@ -1,0 +1,12 @@
+def print_document(pages):
+    abc = True
+    for i in pages:
+        if i.split()[0] == 'Секретно':
+            abc = False
+            print('Дальнейшие материалы засекречены')
+            break
+        else:
+            print(i)
+    if abc:
+        print('Напечатано без купюр')
+

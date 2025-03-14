@@ -1,0 +1,12 @@
+def same_by(characteristic, objects):
+    save = []
+    flag = True
+    for i in objects:
+        save.append(characteristic(i))
+    for i in save:
+        if save.index(i) == 0:
+            a = i
+        if a != i:
+            return False
+    return True
+

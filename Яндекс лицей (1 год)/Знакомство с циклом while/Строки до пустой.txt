@@ -1,0 +1,5 @@
+stroka = input()
+while stroka != '':
+    print(stroka)
+    stroka = input()
+

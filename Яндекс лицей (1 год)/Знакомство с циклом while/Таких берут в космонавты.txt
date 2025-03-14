@@ -1,0 +1,16 @@
+count = 0
+mina = 191
+maxa = 149
+a = input()
+while a != '!':
+    a = int(a)
+    if 150 <= a <= 190:
+        count += 1
+        if a > maxa:
+            maxa = a
+        if a < mina:
+            mina = a
+    a = input()
+print(count)
+print(mina, maxa)
+        

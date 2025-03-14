@@ -1,0 +1,5 @@
+import sys
+lines = [i.strip() for i in list(map(str.strip, sys.stdin))]
+abc = list(filter(lambda x: (len(x) > 0), lines))
+print(len([i for i in abc if i[0] == '#']))
+

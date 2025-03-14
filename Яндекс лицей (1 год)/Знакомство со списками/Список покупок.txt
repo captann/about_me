@@ -1,0 +1,8 @@
+pokupki = []
+n = int(input())
+for i in range(n):
+    pokupka = input()
+    pokupki.append(pokupka)
+for j in pokupki:
+    print(j)
+

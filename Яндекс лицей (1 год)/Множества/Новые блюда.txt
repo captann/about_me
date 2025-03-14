@@ -1,0 +1,18 @@
+kolvo_blud = int(input())
+vozmogno = set()
+real = set()
+for i in range(kolvo_blud):
+    bludo = input()
+    vozmogno.add(bludo)
+kolvo_dnei = int(input())
+for j in range(kolvo_dnei):
+    chislo_blud = int(input())
+    for g in range(chislo_blud):
+        prigotovleno = input()
+        real.add(prigotovleno)
+new_set = vozmogno - real
+for t in new_set:
+    print(t)
+
+
+

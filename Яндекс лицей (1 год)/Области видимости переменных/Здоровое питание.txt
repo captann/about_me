@@ -1,0 +1,17 @@
+def diet(word):
+    global food
+    count = 0
+    word = [i.strip() for i in word.split(',')]
+    chek = len(word)
+    fat = food.get('жирное')
+    tasty = food.get('сладкое')
+    kkal = food.get('мучное')
+    diet = food.get('диетическое')
+    for i in word:
+        if i in fat or i in tasty or i in kkal:
+            count = count + 1
+    if (count / chek) * 100 > 50:
+        return "Не ешь столько, По!"
+    return "Так держать, Воин Дракона!"
+
+

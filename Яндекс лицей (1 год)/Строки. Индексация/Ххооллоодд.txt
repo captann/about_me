@@ -1,0 +1,6 @@
+word = input()
+k = len(word)
+for k in range(k):
+    print(word[k] * 2, end='')
+
+

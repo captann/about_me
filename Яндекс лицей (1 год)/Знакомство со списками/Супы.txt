@@ -1,0 +1,16 @@
+days = int(input())
+count = 0
+abc = 0
+sup = ['щи', 'борщ', 'щавелевый суп', 'овсяный суп', 'суп по-чабански']
+if days <= 5:
+    for i in range(days):
+        print(sup[i])
+else:
+    while count != days:
+        count = count + 1
+        abc = abc + 1
+        if abc == 5:
+            abc = 0
+        print(sup[abc - 1])
+
+

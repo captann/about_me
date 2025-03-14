@@ -1,0 +1,14 @@
+stroki = input()
+count = False
+for i in range(1, int(stroki) + 1):
+    cat = input()
+    if 'Êîò' in cat or 'êîò' in cat:
+        count = True
+    if 'Ï¸ñ' in cat or 'ï¸ñ' in cat:
+        count = False
+if count:
+    print('ÌßÓ')
+else:
+    print('ÍÅÒ')
+
+

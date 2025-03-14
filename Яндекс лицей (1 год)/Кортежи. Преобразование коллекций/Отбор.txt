@@ -1,0 +1,13 @@
+N = int(input())
+good = ('4', '5')
+srNames = []
+for i in range(N):
+    srName = input()
+    srNames.append(srName)
+for j in srNames:
+    print(j)
+print('')
+for x in srNames:
+    if x[-1] in good:
+        print(x)
+

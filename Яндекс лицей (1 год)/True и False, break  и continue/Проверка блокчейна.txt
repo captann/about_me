@@ -1,0 +1,17 @@
+bloki = int(input())
+correct = '-1'
+hel = 0
+abc = 0
+for i in range(bloki):
+    blok = int(input())
+    h, r, m = blok % 256, (blok // 256) % 256, blok // 256 ** 2
+    norma = ((h + r + hel) * 37) / 2 ** 16
+    if h > 100 or h != norma:
+        hel = i
+        abc = hel
+        break
+    hel = h
+if abc == 0:
+    print(correct)
+else:
+    print(abc)

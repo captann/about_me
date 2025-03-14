@@ -1,0 +1,46 @@
+class SeaMap:
+    def __init__(self):
+        self.hit = []
+        for i in range(10):
+            save = []
+            for t in range(10):
+                save.append('.')
+            self.hit.append(save)
+
+    def shoot(self, row, col, result):
+        if result == 'miss':
+            self.hit[row][col] = '*'
+        elif result == 'hit':
+            self.hit[row][col] = 'x'
+        elif result == 'sink':
+            for i in range(row - 1, row + 2):
+                for t in range(col - 1, col + 2):
+                    if 0 <= i <= 9 and 0 <= t <= 9:
+                        if self.hit[i][t] == '.':
+                            self.hit[i][t] = '*'
+            self.hit[row][col] = 'x'
+            for t in range(len(self.hit)):
+                if self.hit[row][t] == 'x':
+                    col = t
+                    for i in range(row - 1, row + 2):
+                        for x in range(col - 1, col + 2):
+                            if 0 <= i < 10 and 0 <= x < 10:
+                                if self.hit[i][x] == '.':
+                                    self.hit[i][x] = '*'
+            for i in range(len(self.hit)):
+                if self.hit[i][col] == 'x':
+                    row = i
+                    for i in range(row - 1, row + 2):
+                        for t in range(col - 1, col + 2):
+                            if 0 <= t <= 9 and 0 <= i <= 9:
+                                if self.hit[i][t] == '.':
+                                    self.hit[i][t] = '*'
+
+    def cell(self, row, col):
+        if self.hit[row][col] == 'x':
+            return 'x'
+        if self.hit[row][col] == '.':
+            return '.'
+        return '*'
+
+

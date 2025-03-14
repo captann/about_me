@@ -1,0 +1,11 @@
+first = [1]
+n = int(input())
+for i in range(n):
+    for t in first:
+        print(t, end=' ')
+    print()
+    last = [1]
+    last = last + [first[x] + first[x + 1] for x in range(len(first) - 1)] + [1]
+    first = last
+
+

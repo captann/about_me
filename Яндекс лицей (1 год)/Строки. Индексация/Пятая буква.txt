@@ -1,0 +1,10 @@
+word = input()
+n = len(word)
+if n < 5:
+    print('мер')
+else:
+    k = word[4]
+    print(k)
+
+
+

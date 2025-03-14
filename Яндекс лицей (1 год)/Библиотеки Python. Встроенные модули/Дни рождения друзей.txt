@@ -1,0 +1,7 @@
+import datetime as dt
+my_date = dt.datetime.now().date()
+a = int(input())
+delta_time1 = dt.timedelta(days=a)
+my_date2 = (my_date + delta_time1)
+print(f"{my_date2.day} {my_date2.month}")
+

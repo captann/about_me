@@ -1,0 +1,16 @@
+def equation(a, b):
+    aa = a.split(';')
+    bb = b.split(';')
+    aa = [float(i) for i in aa]
+    bb = [float(i) for i in bb]
+    xa, ya, xb, yb = aa[0], aa[1], bb[0], bb[1]
+    if xa != xb and ya != yb:
+        k = (ya - yb) / (xa - xb)
+        b = ya - k * xa
+        print(k, b)
+    elif ya == yb:
+        print(ya)
+    elif xa == xb:
+        print(xa)
+
+

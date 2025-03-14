@@ -1,0 +1,41 @@
+class MinMaxWordFinder:
+    def __init__(self):
+        self.lst = []
+        self.maxi = []
+        self.mini = []
+
+    def add_sentence(self, word):
+        already = []
+        word = word.split(' ')
+        word = [i for i in word if i != '' and i != ' ']
+        for i in word:
+            self.lst.append(i)
+
+    def shortest_words(self):
+        if len(self.lst) > 0:
+            a = len(min(self.lst, key=lambda x: len(x)))
+            self.mini = []
+            for i in self.lst:
+                if len(i) <= a and i != a:
+                    self.mini.append(i)
+            a = sorted(self.mini)
+            return a
+        else:
+            return ['']
+
+    def longest_words(self):
+        if len(self.lst) > 0:
+            q = len(max(self.lst, key=lambda x: len(x)))
+            self.maxi = []
+            for i in self.lst:
+                if len(i) >= q and i != q:
+                    self.maxi.append(i)
+            a = sorted(self.maxi)
+            already = []
+            for i in a:
+                if i not in already:
+                    already.append(i)
+            return already
+        else:
+            return ['']
+

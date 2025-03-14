@@ -1,0 +1,11 @@
+def arithmetic_operation(operator):
+    if operator == '+':
+        return lambda x, y: x + y
+    elif operator == '-':
+        return lambda x, y: x - y
+    elif operator == '/':
+        return lambda x, y: x / y
+    else:
+        return lambda x, y: x * y
+
+

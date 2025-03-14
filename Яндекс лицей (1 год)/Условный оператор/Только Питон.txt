@@ -1,0 +1,6 @@
+a = 'Python'
+b = input()
+if a == b:
+    print('дю')
+else:
+    print('мер')

@@ -1,0 +1,20 @@
+import pymorphy2
+morph = pymorphy2.MorphAnalyzer()
+for i in range(99, -1, -1):
+    ost = "Осталось"
+    if i > 0:
+        work = morph.parse('бутылка')[0]
+        work_1 = work.make_agree_with_number(i).word
+        work_2 = work.make_agree_with_number(i - 1).word
+        res = morph.parse(work_2)[0]
+        if res.tag.number != "plur":
+            if work_2 != 'бутылки':
+                ost = morph.parse('Осталось')[0].inflect({res.tag.gender}).word
+                ost = list(ost)
+                ost[0] = "О"
+                ost = ''.join(ost)
+        print(f"В холодильнике {i} {work_1} кваса.")
+        print("Возьмём одну и выпьем.")
+        print(f"{ost} {i - 1} {work_2} кваса.")
+
+

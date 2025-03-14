@@ -1,0 +1,29 @@
+class Table:
+    def __init__(self, row, col):
+        self.ro = []
+        save = []
+        self.chek = row
+        self.save = col
+        for i in range(row):
+            save = []
+            for t in range(col):
+                save.append(0)
+            self.ro.append(save)
+
+    def get_value(self, row, col):
+        if row > self.chek - 1 or row < 0:
+            return None
+        if col > self.save - 1 or col < 0:
+            return None
+        return self.ro[row][col]
+
+    def set_value(self, row, col, value):
+        self.ro[row][col] = value
+
+    def n_rows(self):
+        return self.chek
+
+    def n_cols(self):
+        return self.save
+
+

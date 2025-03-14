@@ -1,0 +1,16 @@
+def print_statistics(arr):
+    if arr == []:
+        print(0, 0, 0, 0, 0, sep='\n')
+    else:
+        print(len(arr))
+        print(float(sum(arr) / len(arr)))
+        print(float(min(arr)))
+        print(float(max(arr)))
+        arr.sort()
+        if len(arr) % 2 != 0:
+            print(float(arr[int(len(arr) / 2)]))
+        else:
+            print(((arr[int((len(arr) / 2)
+                            - 1)] + arr[int(len(arr) / 2)])) / 2)
+
+

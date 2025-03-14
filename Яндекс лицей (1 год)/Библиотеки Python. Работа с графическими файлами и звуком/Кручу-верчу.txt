@@ -1,0 +1,20 @@
+import wave
+import struct
+
+
+def pitch_and_toss():
+    work = wave.open("in.wav", mode="rb")
+    final = wave.open("out.wav", mode="wb")
+    final.setparams(work.getparams())
+    n_o_f = work.getnframes()
+    d = work.readframes(n_o_f)
+    d = struct.unpack("<" + str(n_o_f) + 'h', d)
+    le = len(d) // 4
+    n_w = [d[:le], d[le:le * 2], d[le * 2:le * 3], d[le * 3:]]
+    n_d = n_w[2] + n_w[3] + n_w[0] + n_w[1]
+    new_f = struct.pack("<" + str(len(n_d)) + 'h', *n_d)
+    final.writeframes(new_f)
+    work.close()
+    final.close()
+
+

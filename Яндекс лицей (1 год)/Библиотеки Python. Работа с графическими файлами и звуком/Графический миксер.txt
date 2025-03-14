@@ -1,0 +1,14 @@
+from PIL import Image
+
+
+def twist_image(input_file_name, output_file_name):
+    im = Image.open(input_file_name)
+    x, y = im.size
+    im_new = Image.new("RGB", (x, y))
+    im1 = im.crop((0, 0, int(x / 2), y))
+    im2 = im.crop((int(x / 2, ), 0, x, y))
+    im_new.paste(im2, (0, 0, int(x / 2), y))
+    im_new.paste(im1, (int(x / 2), 0, x, y))
+    im_new.save(output_file_name)
+
+

@@ -1,0 +1,35 @@
+def hello(name):
+    global query
+    for i in range(len(query)):
+        cond = query[i]
+        if cond is None:
+            print(f"Здравствуйте, {name}! Подойдите к окошку номер {i + 1}")
+            query[i] = name
+            return query
+    print(f"Простите, {name}. Все окна заняты")
+
+
+def search_card(name):
+    global base, query
+    if name not in query:
+        print(f"Простите, {name}, дождитесь своей очереди")
+    else:
+        if name in base:
+            print('Ваша карта с номером', base.index(name) + 1, 'найдена')
+        else:
+            print('Ваша карта не найдена')
+
+
+def good_bye(name):
+    global query
+    if name in query:
+        print(f"До свидания, не болейте, {name}")
+        for i in range(len(query)):
+            if query[i] == name:
+                query[i] = None
+        return query
+    else:
+        print(f"Простите, {name}, дождитесь своей очереди")
+        return query
+
+

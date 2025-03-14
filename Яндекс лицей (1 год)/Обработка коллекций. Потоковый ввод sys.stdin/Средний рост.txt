@@ -1,0 +1,8 @@
+import sys
+word = list(sys.stdin)
+if len(word) > 0:
+    word = [int(i) for i in word]
+    print(sum(word) / len(word))
+else:
+    print(-1)
+

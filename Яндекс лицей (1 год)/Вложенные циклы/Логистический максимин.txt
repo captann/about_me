@@ -1,0 +1,23 @@
+road = int(input())
+hmin = 0
+roadN = 1
+for j in range(1, road + 1):
+    tunnel = int(input())
+
+    for i in range(1, tunnel + 1):
+        height = int(input())
+        if i == 1:
+            hmin = height
+        else:
+            if height < hmin:
+                hmin = height
+    if j == 1:
+        hmax = hmin
+    else:
+        if hmin > hmax:
+            hmax = hmin
+            roadN = j
+print(roadN, hmax)
+
+
+

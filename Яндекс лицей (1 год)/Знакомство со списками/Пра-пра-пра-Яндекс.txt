@@ -1,0 +1,12 @@
+n = int(input())
+day = []
+for i in range(n):
+    wensday = input()
+    day.append(wensday)
+look = input()
+
+for j in day:
+    if look in j:
+        print(j)
+
+

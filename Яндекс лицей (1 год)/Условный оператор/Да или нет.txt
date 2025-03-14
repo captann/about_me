@@ -1,0 +1,8 @@
+wwod = input()
+wwod1 = input()
+cos = 'ДЮ'
+sin = 'МЕР'
+if (wwod == cos or wwod == sin) and (wwod1 == cos or wwod1 == sin):
+    print('бепмн')
+else:
+    print('мебепмн')

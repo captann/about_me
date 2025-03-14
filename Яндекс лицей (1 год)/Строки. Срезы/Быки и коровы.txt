@@ -1,0 +1,19 @@
+name1 = input()
+name2 = input()
+bik = 0
+cows = 0
+bi = set()
+be = set()
+k = len(name1)
+for i in range(k):
+    if name1[i] == name2[i]:
+        bik = bik + 1
+    else:
+        bi.add(name2[i])
+        be.add(name1[i])
+cows = bi.intersection(be)
+k = len(cows)
+print(bik, k)
+
+        
+

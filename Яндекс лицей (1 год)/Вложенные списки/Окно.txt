@@ -1,0 +1,7 @@
+bottles = int(input())
+milk = [int(input()) for i in range(bottles)]
+minimum, maximum = int(input()), int(input())
+for t in milk:
+    if t >= minimum and t <= maximum:
+        print(t)
+

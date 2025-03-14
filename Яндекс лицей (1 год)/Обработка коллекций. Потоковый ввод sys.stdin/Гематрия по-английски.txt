@@ -1,0 +1,32 @@
+import sys
+
+
+def result(word):
+    res = []
+    for i in word:
+        save = []
+        for t in i:
+            save.append(ord(t.upper()) - ord('A') + 1)
+        res.append(sum(save))
+    return res
+
+
+def sl():
+    global word, res
+    save = []
+    result = []
+    for i in range(len(res)):
+        save = []
+        save.append(res[i])
+        save.append(word[i])
+        result.append(save)
+    return result
+
+
+word = list(map(str.strip, sys.stdin))
+res = result(word)
+final = sl()
+end = sorted(final, key=lambda s: (int(s[0]), str(s[1])))
+for i in end:
+    print(i[1])
+

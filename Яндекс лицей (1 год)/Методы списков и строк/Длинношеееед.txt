@@ -1,0 +1,10 @@
+word = list(input())
+count = []
+for i in word:
+    count.append(i.lower())
+word.clear()
+for i in count:
+    word.append(count.count(i))
+print(max(word))
+
+

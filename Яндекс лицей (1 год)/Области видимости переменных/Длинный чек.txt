@@ -1,0 +1,35 @@
+abc = False
+count, number = 0, 0
+save = []
+cost = []
+
+
+def clean():
+    global save, abc, number, cost
+    number = 0
+    abc = False
+    save = []
+    cost = []
+    return save, number, cost
+
+
+def add_item(item_name, item_cost):
+    global save, abc, number, cost
+    abc = True
+    save.append(item_name)
+    cost.append(item_cost)
+    number = number + 1
+
+
+def print_receipt():
+    global abc, save, count, number, cost
+    if abc:
+        count = count + 1
+        print(f"Чек {count}. Всего предметов: {number}")
+        for i in range(len(save)):
+            print(f"{save[i]} - {cost[i]}")
+        print(f"Итого: {sum(cost)}")
+        print('-----')
+    clean()
+
+

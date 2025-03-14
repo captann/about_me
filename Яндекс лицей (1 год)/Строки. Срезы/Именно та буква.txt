@@ -1,0 +1,13 @@
+word = input()
+best_number = int(input())
+best_letter = input()
+k = len(word)
+g = len(best_letter)
+if best_number > k or g > 1 or best_number < 1:
+    print('ÎØÈÁÊÀ')
+elif word[best_number - 1] == best_letter:
+    print('ÄÀ')
+else:
+    print('ÍÅÒ')
+    
+

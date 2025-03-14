@@ -1,0 +1,15 @@
+prices = input().split(';')
+count = 0
+m = []
+for i in prices:
+    save = i.split(',')
+    count = 0
+    m = []
+    for t in save:
+        if int(t) >= 1000000000:
+            count = count + 1
+            m.append(t)
+    k = ','.join(m)
+    print(k)
+
+

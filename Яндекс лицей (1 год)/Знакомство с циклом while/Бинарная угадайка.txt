@@ -1,0 +1,14 @@
+nim = 0
+nix = 1001
+cym = ' '
+count = 0
+while cym != 0:
+    count = (nim + nix) // 2
+    print(count)
+    answer = input()
+    if answer == '>':
+        nim = count
+    if answer == '<':
+        nix = count
+print('Complete')
+

@@ -1,0 +1,6 @@
+chislo1 = float(input())
+if abs(chislo1) < 0.000001 or chislo1 == 0:
+    print(1000000.0)
+else:
+    print(1 / chislo1)
+

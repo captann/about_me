@@ -1,0 +1,55 @@
+from random import sample, choice
+
+
+def chek(z):
+    numbers = ['2', '3', '4', '5', '6', '7', '8', '9']
+    letters_low = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'm',
+                   'n', 'p', ]
+    letters_up = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'J', 'K', 'L', 'M',
+                  'N', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+    if z == 'a':
+        return sample(numbers, 1)
+    elif z == 'b':
+        return sample(letters_low, 1)
+    else:
+        return sample(letters_up, 1)
+
+
+def generate_password(m):
+    global abc
+    result = []
+    save = ['a', 'b', 't']
+    z = choice(save)
+    result.append((chek(z))[0])
+    del save[save.index(z)]
+    z = choice(save)
+    result.append((chek(z))[0])
+    del save[save.index(z)]
+    z = choice(save)
+    result.append((chek(z))[0])
+    del save[save.index(z)]
+    for i in range(m - 3):
+        result.append((sample(abc, 1))[0])
+    return ''.join(result)
+
+
+def main(n, m):
+    already = []
+    for i in range(n):
+        a = generate_password(m)
+        if a not in already:
+            already.append(a)
+        else:
+            while a in already:
+                a = generate_password(m)
+            already.append(a)
+    return already
+
+
+save = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'm', 'n', 'p',
+        'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D',
+        'E', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T',
+        'U', 'V', 'W', 'X', 'Y', 'Z', '2', '3', '4', '5', '6', '7', '8', '9']
+abc = save * 4
+
+

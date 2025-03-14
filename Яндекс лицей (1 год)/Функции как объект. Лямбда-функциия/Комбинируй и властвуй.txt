@@ -1,0 +1,5 @@
+work = [i for i in range(10, 100)]
+work = list(filter(lambda x: x % 9 == 0, work))
+print(sum(map(lambda x: x ** 2, work)))
+# 40905
+

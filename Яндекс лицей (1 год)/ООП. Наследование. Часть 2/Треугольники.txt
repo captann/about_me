@@ -1,0 +1,20 @@
+class Triangle:
+    def __init__(self, first, second, third):
+        self.first = first
+        self.second = second
+        self.third = third
+
+    def perimeter(self):
+        a = self.first + self.second + self.third
+        return a
+
+    
+class EquilateralTriangle(Triangle):
+    def __init__(self, *first):
+        self.first = first[0]
+        self.second = first[0]
+        self.third = first[0]
+
+    
+
+

@@ -1,0 +1,6 @@
+vvod = int(input())
+while vvod % 10 == 0:
+    print(vvod)
+    vvod = int(input())
+print('')
+

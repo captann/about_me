@@ -1,0 +1,8 @@
+total = int(input())
+vzal = int(input())
+while vzal < total:
+    a = total - vzal
+    print(a)
+    total = a
+    vzal = int(input())
+print(0)

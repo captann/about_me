@@ -1,0 +1,8 @@
+tempreture = float(input())
+if tempreture < 15.5:
+    print('ункндмн')
+elif tempreture > 28:
+    print('фюпйн')
+else:
+    print('мнплюкэмн')
+

@@ -1,0 +1,18 @@
+glasn = {'а', 'о', 'у', 'ы', 'е', 'и', 'е', 'ё', 'я', 'ю', 'a', 'e', 'i', 'o', 
+         'u', 'y'}
+count = 1
+word = input().split()
+final = []
+word = [''.join(i.split('-')) for i in word]
+for i in word:
+    save = [count for x in i if x.lower() in glasn]
+    final.append(sum(save))
+if len(final) > 0:
+    a = final[0]
+    save = [True if i == a else False for i in final]
+    if all(save):
+        print("Парам пам-пам")
+    else:
+        print("Пам парам")
+
+

@@ -1,0 +1,11 @@
+def late(now, classes, bus):
+    class_time, work = [int(i) for i in classes.split(':')], []
+    now_time = [int(i) for i in now.split(':')]
+    now = now_time[0] * 60 + now_time[1]
+    deadline = class_time[0] * 60 + class_time[1]
+    work = [i for i in bus if i >= 5 and i + 15 + now <= deadline]
+    if work == []:
+        return "Опоздание"
+    return f"Выйти через {max(work) - 5} минут"
+
+

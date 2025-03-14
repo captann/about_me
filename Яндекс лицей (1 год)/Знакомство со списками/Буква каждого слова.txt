@@ -1,0 +1,13 @@
+lines = int(input())
+words = []
+for j in range(lines):
+    word = input()
+    words.append(word)
+number = int(input())
+k = len(words)
+for i in range(k):
+    way = words[i]
+    m = len(way)
+    if m >= number:
+        print(way[number - 1], end='')
+

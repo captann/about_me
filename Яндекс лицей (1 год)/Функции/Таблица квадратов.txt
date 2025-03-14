@@ -1,0 +1,16 @@
+def squared():
+    abc = [i ** 2 for i in range(11, 100) if i % 10 != 0]
+    abc = [str(i) for i in abc]
+    for i in range(len(abc)):
+        if len(abc[i]) == 3:
+            abc[i] = abc[i] + ' '
+    count = 0
+    for i in range(len(abc)):
+        count = count + 1
+        if count % 9 == 0:
+            print(abc[i].rstrip(), end='\n')
+        else:
+            print(abc[i], end=' ')
+
+
+

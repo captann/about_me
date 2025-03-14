@@ -1,0 +1,8 @@
+word = input()
+k = word[0]
+while k == 'à' or k == 'À':
+    print(word)
+    word = input()
+    k = word[0]
+
+

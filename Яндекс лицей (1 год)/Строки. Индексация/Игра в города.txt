@@ -1,0 +1,18 @@
+word = True
+count = 0
+word1 = input()
+while count == 0:
+    count += 1
+else:
+    while word:
+        word2 = input()
+        k = word1[-1]
+        w = word2[0]
+        if k == w:
+            word1 = word2
+        else:
+            print(word2)
+            word = False
+
+
+

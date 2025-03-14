@@ -1,0 +1,28 @@
+class BoundingRectangle:
+    def __init__(self):
+        self.xx = []
+        self.yy = []
+
+    def add_point(self, x, y):
+        self.xx.append(x)
+        self.yy.append(y)
+
+    def width(self):
+        return max(self.xx) - min(self.xx)
+
+    def height(self):
+        return max(self.yy) - min(self.yy)
+
+    def bottom_y(self):
+        return min(self.yy)
+
+    def top_y(self):
+        return max(self.yy)
+
+    def left_x(self):
+        return min(self.xx)
+
+    def right_x(self):
+        return max(self.xx)
+
+

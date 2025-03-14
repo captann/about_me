@@ -1,0 +1,26 @@
+for i in range(int(input())):
+    ch, zn = int(input()), int(input())
+    if i == 0:
+        CH, ZN = ch, zn
+        continue
+    m1, m2 = ch, zn
+    while m1 != m2:
+        if m1 > m2:
+            m1 -= m2
+        else:
+            m2 -= m1
+    ch, zn = ch // m1, zn // m1
+    if zn != ZN:
+        CH = ch * ZN + CH * zn
+        ZN *= zn
+    else:
+        CH += ch
+m1, m2 = CH, ZN
+while m1 != m2:
+    if m1 > m2:
+        m1 -= m2
+    else:
+        m2 -= m1
+CH, ZN = int(CH / m1), int(ZN / m1)
+print(f"{CH}/{ZN}")
+

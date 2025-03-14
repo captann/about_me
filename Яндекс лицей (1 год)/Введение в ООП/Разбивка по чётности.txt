@@ -1,0 +1,18 @@
+class OddEvenSeparator:
+    def __init__(self):
+        self.ev = []
+        self.od = []
+
+    def add_number(self, number):
+        if number % 2 == 0:
+            self.ev.append(number)
+        else:
+            self.od.append(number)
+
+    def even(self):
+        return self.ev
+
+    def odd(self):
+        return self.od
+
+

@@ -1,0 +1,18 @@
+abc = False
+cost1 = int(input())
+price1 = 0
+price2 = 0
+while not abc:
+    cost2 = int(input())
+    if cost2 > cost1:
+        if price1 == 0:
+            price1 = cost2
+    if (price1 != 0) and (cost2 < cost1):
+        if price2 == 0:
+            price2 = cost2
+    if cost2 == 0:
+        abc = True
+    cost1 = cost2
+print(price1, price2, price2 - price1)
+
+

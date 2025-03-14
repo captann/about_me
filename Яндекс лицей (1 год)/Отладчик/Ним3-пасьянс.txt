@@ -1,0 +1,17 @@
+kucha1 = int(input())
+kucha2 = int(input())
+kucha3 = int(input())
+while kucha1 != 0 or kucha2 != 0 or kucha3 != 0:
+    nomer_kuchi = int(input())
+    kolvo = int(input())
+    if nomer_kuchi == 1:
+        kucha1 = kucha1 - kolvo
+        print(kucha1, kucha2, kucha3)
+    elif nomer_kuchi == 2:
+        kucha2 = kucha2 - kolvo
+        print(kucha1, kucha2, kucha3)
+    elif nomer_kuchi == 3:
+        kucha3 = kucha3 - kolvo
+        print(kucha1, kucha2, kucha3)
+
+

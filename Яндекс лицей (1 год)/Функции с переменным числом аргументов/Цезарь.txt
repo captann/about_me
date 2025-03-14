@@ -1,0 +1,67 @@
+def encrypt_caesar(msg, *shift):
+    small = []
+    save = []
+    shift = list(shift)
+    if shift == []:
+        shift.append(3)
+    big = []
+    chek = []
+    count = 0
+    for i in list(msg):
+        if i.upper() == i and ord(i) >= 1040:
+            big.append(list(msg).index(i))
+        save.append(ord(i.lower()))
+    for i in save:
+        if i + shift[0] > 1103 and i > 1040:
+            count = 0
+            while i + count <= 1103:
+                count = count + 1
+            chek.append(1072 + shift[0] - count)
+        elif i >= 1040:
+            chek.append(i + shift[0])
+        else:
+            chek.append(i)
+    save = []
+    for i in chek:
+        save.append(chr(i))
+    chek = []
+    for i in big:
+        save[i] = save[i].upper()
+    return ''.join(save)
+
+
+def decrypt_caesar(encrypted, *shift):
+    msg = encrypted
+    small = []
+    save = []
+    shift = list(shift)
+    if shift == []:
+        shift.append(3)
+    big = []
+    chek = []
+    count = 0
+    for i in list(msg):
+        if i.upper() == i and ord(i) >= 1040:
+            big.append(list(msg).index(i))
+        save.append(ord(i.lower()))
+    for i in save:
+        if i - shift[0] >= 1072:
+            chek.append((i - shift[0]))
+        elif i - shift[0] < 1072 and i > 1040:
+            count = 0
+            while i - count >= 1072:
+                count = count + 1
+            chek.append(1103 - shift[0] + count)
+        elif i >= 1040:
+            chek.append(i - shift[0])
+        else:
+            chek.append(i)
+    save = []
+    for i in chek:
+        save.append(chr(i))
+    chek = []
+    for i in big:
+        save[i] = save[i].upper()
+    return ''.join(save)
+
+

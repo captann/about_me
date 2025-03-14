@@ -1,0 +1,24 @@
+slowar = {}
+count = []
+
+
+def get_transactions(t):
+    global slowar, count
+    if t == 'print_it':
+        for i in count:
+            print(str(slowar[i][0]) + ' ' + slowar[i][1] +
+                  ' ' + (str(slowar[i][2])))
+    else:
+        work = (''.join(t.split('-')[1:])).split(':')
+        if work[0] not in slowar:
+            count.append(work[0])
+            slowar[work[0]] = [1, work[0], int(work[1])]
+        else:
+            for i in range(3):
+                if i == 0:
+                    slowar[work[0]][i] = slowar[work[0]][i] + 1
+                elif i == 2:
+                    a = int(t.split(':')[-1])
+                    slowar[work[0]][i] = slowar[work[0]][i] + a
+
+

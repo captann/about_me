@@ -1,0 +1,19 @@
+def diskrim(a, b, t):
+    return pow(b, 2) - 4 * a * t
+
+
+def roots_of_quadratic_equation(a, b, t):
+    if a == 0 and b == 0 and t == 0:
+        return ["all"]
+    elif a == 0 and b == 0:
+        return ['']
+    elif a == 0:
+        return [(-1 * t) / b]
+    DD = diskrim(a, b, t)
+    if DD == 0:
+        return [(-1 * b) / (2 * a)]
+    elif DD < 0:
+        return ['']
+    else:
+        return [(-b + pow(DD, 0.5)) / (2 * a), (-b - pow(DD, 0.5)) / (2 * a)]
+

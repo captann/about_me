@@ -1,0 +1,14 @@
+visota = int(input())
+sh = int(input())
+symb = input()
+for i in range(visota):
+    if i == 0 or i == visota - 1:
+        for j in range(sh):
+            print(symb, end='')
+    else:
+        print(symb, end='')
+        for j in range(1, sh - 1):
+            print(' ', end='')
+        print(symb, end='')
+    print()
+

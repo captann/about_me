@@ -1,0 +1,31 @@
+class FoodInfo:
+    def __init__(self, proteins, fats, carbohydrates):
+        self.pro = proteins
+        self.fat = fats
+        self.car = carbohydrates
+
+    def __add__(self, other):
+        f1 = self.pro * 4 + self.fat * 9 + self.car * 4
+        f2 = other.pro * 4 + other.fat * 9 + other.car * 4
+        fs = self.fat + other.fat
+        ps = self.pro + other.pro
+        cs = self.car + other.car
+        f3 = f1 + f2
+        return FoodInfo(ps, fs, cs)
+
+    def get_kcalories(self):
+        self.re = self.pro * 4 + self.fat * 9 + self.car * 4
+        return self.re
+
+    def get_proteins(self):
+        return self.pro
+
+    def get_fats(self):
+        return self.fat
+
+    def get_carbohydrates(self):
+        return self.car
+
+    def fi_sum(self):
+        return FoodInfo(f3)
+

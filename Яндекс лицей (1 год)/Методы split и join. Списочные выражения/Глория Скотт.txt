@@ -1,0 +1,7 @@
+word = input()
+abc = word.split()
+k = len(abc)
+for i in range(k):
+    if (i + 1) % 3 == 0 and i != 0: 
+        print(abc[i], end=' ')
+

@@ -1,0 +1,6 @@
+def from_string_to_list(string, container):
+    number = string.split()
+    for i in number:
+        container.append(int(i))
+    return container
+

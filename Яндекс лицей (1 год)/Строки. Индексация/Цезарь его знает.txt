@@ -1,0 +1,16 @@
+shift = int(input())
+text = input()
+count = len(text)
+for i in range(count):
+    code = ord(text[i])
+    if (code >= 1040) and (code <= 1071):
+        code = code + shift
+        if code > 1071:
+            code = code - 1071 + 1039     
+    if (code >= 1072) and (code <= 1103):
+        code = code + shift
+        if code > 1103:
+            code = code - 1103 + 1071
+    print(chr(code), end='')
+
+

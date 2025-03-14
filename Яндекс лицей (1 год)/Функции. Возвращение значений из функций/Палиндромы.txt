@@ -1,0 +1,30 @@
+def palindrome(s):
+    spisok = []
+    spi1 = []
+    spi2 = []
+    abc = True
+    for i in s:
+        if str(i) != ' ':
+            spisok.append(str(i).lower())
+    if len(spisok) % 2 != 0:
+        spi1 = spisok[:int(len(spisok) / 2)]
+        spi2 = spisok[int((len(spisok) / 2) + 1):]
+        spi2.reverse()
+        if spi2 == spi1:
+            abc = True
+        else:
+            abc = False
+    else:
+        spi1 = spisok[:int(len(spisok) / 2)]
+        spi2 = spisok[int(len(spisok) / 2):]
+        spi2.reverse()
+        if spi2 == spi1:
+            abc = True
+        else:
+            abc = False
+    if abc:
+        return 'Палиндром'
+    else:
+        return 'Не палиндром'
+
+

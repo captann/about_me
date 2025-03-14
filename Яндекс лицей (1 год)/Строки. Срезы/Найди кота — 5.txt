@@ -1,0 +1,17 @@
+stroki = int(input())
+count = 0
+abc = True
+for i in range(1, stroki + 1):
+    word = input()
+    abc = True
+    count = count + 1
+    if 'кот' in word:
+        k = len(word)
+        abc = True
+        for j in range(k):
+            if word[j] == 'к' and word[j + 1] == 'о' and word[j + 2] == 'т':
+                if abc:
+                    print(count, j + 1)
+                    abc = False
+
+

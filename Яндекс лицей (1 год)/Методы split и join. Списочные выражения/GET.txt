@@ -1,0 +1,16 @@
+look = input()
+count = 0
+looking = input()
+abc = look.split('?')
+abc.remove(abc[0])
+for i in abc:
+    h = i.split('=')
+for g in h:
+    count = count + 1
+    if looking in g:
+        k = g + '=' + h[count]
+abc = k.split('=')
+abc = abc[1]
+abc = abc.split('&')
+print(abc[0])
+

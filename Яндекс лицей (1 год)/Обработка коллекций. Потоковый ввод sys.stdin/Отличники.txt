@@ -1,0 +1,22 @@
+abc = []
+for i in range(int(input())):
+    save = []
+    for t in range(int(input())):
+        t = input()
+        if t[-1] == '5':
+            save.append(True)
+        else:
+            save.append(False)
+        abc.append(save)
+save = []
+for i in abc:
+    if any(i):
+        save.append(True)
+    else:
+        save.append(False)
+if all(save):
+    print('дю')
+else:
+    print('мер')
+
+

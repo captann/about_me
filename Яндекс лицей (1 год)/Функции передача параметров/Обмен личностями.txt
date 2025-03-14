@@ -1,0 +1,30 @@
+def swap(first, second):
+    a, q = len(first), len(second)
+    if a > q:
+        for i in range(a - q):
+            second.append('ms21')
+    elif q > a:
+        for i in range((q - a)):
+            first.append('ms21')
+    a, q = len(first), len(second)
+    abc = first[:]
+    for i in range(q):
+        first[i] = second[i]
+    yest = []
+    for i in range(a):
+        second[i] = abc[i]
+    for i in first:
+        if i == 'ms21':
+            del first[first.index('ms21')]
+
+    for i in first:
+        if i == 'ms21':
+            del first[first.index('ms21')]
+    for i in second:
+        if i == 'ms21':
+            del second[second.index('ms21')]
+    for i in second:
+        if i == 'ms21':
+            del second[second.index('ms21')]
+
+

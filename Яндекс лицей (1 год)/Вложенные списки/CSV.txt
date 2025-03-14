@@ -1,0 +1,12 @@
+
+words = [input() for i in range(int(input()))]
+k = int(input())
+coord = [input().split(',') for x in range(k)]
+for i in range(k):
+    b = coord[i][0]
+    stroka = int(b)
+    a = coord[i][1]
+    kof = int(a)
+    line = words[stroka].split(',')
+    print(line[kof])
+

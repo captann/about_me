@@ -1,0 +1,8 @@
+money = int(input())
+count = int(input())
+for bik in range(1, (money // 20) + 1):
+    for cow in range((money - bik * 20) // 10 + 1):
+        telenok = count - bik - cow
+        if (bik * 20) + (cow * 10) + (telenok * 5) == money:
+            print(bik, cow, telenok)
+

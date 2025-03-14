@@ -1,0 +1,38 @@
+def number_in_english(number):
+    last = {1: 'one', 2: 'two', 3: 'three', 4: 'four', 5: 'five', 6: 'six',
+            7: 'seven ', 8: 'eight', 9: 'nine', 0: 'zero'}
+    ten = {2: 'twenty', 3: 'thirty', 4: 'fourty', 5: 'fifty', 6: 'sixty',
+           7: 'seventy', 8: 'eighty', 9: 'ninety'}
+    ano = {11: 'eleven', 12: 'twelve', 13: 'thirteen', 14: 'fourteen',
+           15: 'fifteen', 16: 'sixteen', 17: 'seventeen', 18: 'eighteen',
+           19: 'nineteen', 10: 'ten'}
+    number = str(number)
+    a = len(number)
+    if a == 1:
+        return last.get(int(number))
+    elif a == 2:
+        if int(number) < 20:
+            return ano.get(int(number))
+        else:
+            if number[1] != '0':
+                return f"{ten.get(int(number[0]))} {last.get(int(number[1]))}"
+            else:
+                return ten.get(int(number[0]))
+    else:
+        if int(number[1:]) in ano:
+            q = ano.get(int(number[1:]))
+            return last.get(int(number[0])) + ' hundred and ' + q
+        elif number[1:] == '00':
+            return last.get(int(number[0])) + ' hundred'
+        elif number[2] == '0':
+            q = ten.get(int(number[1]))
+            return last.get(int(number[0])) + 'hundred and ' + q        
+        elif number[1] != '0':
+            q = ten.get(int(number[1]))
+            w = last.get(int(number[2]))
+            return last.get(int(number[0])) + ' hundred and ' + q + ' ' + w
+        elif number[1] == '0' and number[1:] != '00':
+            w = last.get(int(number[2]))
+            return last.get(int(number[0])) + ' hundred and ' + w
+
+

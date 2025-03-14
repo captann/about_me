@@ -1,0 +1,9 @@
+def fractal_print(obj):
+    work = []
+    for i in obj:
+        work.append(str(i))
+    abc = ', '.join(work)
+    abc = f"[{abc}]"
+    print(abc)
+
+

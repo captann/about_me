@@ -1,0 +1,21 @@
+from PIL import Image
+
+
+def gradient(color):
+    im = Image.new("RGB", (512, 200), (0, 0, 0))
+    pixels = im.load()
+    if color.lower() == 'g':
+        for i in range(512):
+            for t in range(200):
+                pixels[i, t] = (0, int(i // 2), 0)
+    elif color.lower() == 'r':
+        for i in range(512):
+            for t in range(200):
+                pixels[i, t] = (int(i // 2), 0, 0)
+    else:
+        for i in range(512):
+            for t in range(200):
+                pixels[i, t] = (0, 0, int(i // 2))
+    im.save("res.png")
+
+

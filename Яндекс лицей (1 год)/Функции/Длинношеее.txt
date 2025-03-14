@@ -1,0 +1,38 @@
+def print_long_words(text):
+    abc = text.split()
+    work, final = [], []
+    glasnR = ['à', 'î', 'ý', 'è', 'ó', 'û', 'å', '¸', 'þ', 'ÿ']
+    glasnE = ['a', 'e', 'i', 'o', 'u', 'y']
+    if len(abc) > 1:
+        for i in abc:
+            save = []
+            for t in i:
+                if ord(t.upper()) in range(65, 91):
+                    save.append(t.lower())
+                elif ord(t.upper()) in range(1040, 1072):
+                    save.append(t.lower())
+                elif ord(t.upper()) == 1025:
+                    save.append(t.lower())
+            work.append(''.join(save))
+    else:
+        count = 0
+        save = []
+        for i in range(len(abc[0])):
+            if ord(abc[0][i].upper()) not in range(65, 91):
+                if ord(abc[0][i].upper()) not in range(1040, 1072):
+                    if ord(abc[0][i].upper()) != 1025:
+                        work.append(list(abc[0][count:i]))
+                        count = i + 1
+        if work[-1] != list(abc[0][count:i]):
+            work.append(list(abc[0][count:i + 1]))
+    for i in work:
+        count = 0
+        for t in i:
+            if t in glasnR or t in glasnE:
+                count = count + 1
+        if count >= 4:
+            final.append(''.join(i))
+    for i in final:
+        print(i)
+
+

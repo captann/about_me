@@ -1,0 +1,21 @@
+import pymorphy2
+morph = pymorphy2.MorphAnalyzer()
+word = input()
+res = morph.parse(word)[0]
+if res.tag.POS == 'INFN' or res.tag.POS == 'VERB':
+    print("Прошедшее время:")
+    print(morph.parse(word)[0].inflect({'sing', 'masc'}).word)
+    print(morph.parse(word)[0].inflect({'sing', 'femn'}).word)
+    print(morph.parse(word)[0].inflect({'sing', 'neut'}).word)
+    print(morph.parse(word)[0].inflect({'past', 'plur'}).word)
+    print("Настоящее время:")
+    print(morph.parse(word)[0].inflect({'1per', 'sing'}).word)
+    print(morph.parse(word)[0].inflect({'1per', 'plur'}).word)
+    print(morph.parse(word)[0].inflect({'2per', 'sing'}).word)
+    print(morph.parse(word)[0].inflect({'2per', 'plur'}).word)
+    print(morph.parse(word)[0].inflect({'3per', 'sing'}).word)
+    print(morph.parse(word)[0].inflect({'3per', 'plur'}).word)
+else:
+    print("Не глагол")
+
+

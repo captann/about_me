@@ -1,0 +1,18 @@
+sdelano = []
+
+
+def do_bet(a, b):
+    abc = True
+    if a in sdelano or a > 10 or a < 1:
+        print('Что-то пошло не так, попробуйте еще раз')
+        abc = False
+        return
+    if b != 0 and a <= 10 and a > 0 and abc:
+        sdelano.append(a)
+    if b == 0:
+        print('Что-то пошло не так, попробуйте еще раз')
+        abc = False
+        return
+    if abc:
+        print('Ваша ставка в размере', b, 'на лошадь', a, 'принята')
+

@@ -1,0 +1,26 @@
+class Polynomial:
+    def __init__(self, cof):
+        self.cof = cof
+
+    def __call__(self, x):
+        a = len(self.cof)
+        abc = 0
+        for i in range(a):
+            abc = abc + self.cof[i] * x ** i
+        return abc
+
+    def __add__(self, other):
+        p = self.cof
+        q = other.cof
+        a = len(p) - len(q)
+        if a > 0:
+            for i in range(abs(a)):
+                q.append(0)
+        else:
+            for i in range(abs(a)):
+                p.append(0)
+        w = len(q)
+        result = [sum([q[t], p[t]]) for t in range(w)]
+        return Polynomial(result)
+
+

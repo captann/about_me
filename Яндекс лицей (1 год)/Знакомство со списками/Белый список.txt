@@ -1,0 +1,14 @@
+white = []
+black = []
+n = int(input())
+for i in range(n):
+    OK = input()
+    white.append(OK)
+k = int(input())
+for j in range(k):
+    NOT = input()
+    black.append(NOT)
+for m in black:
+    if m in white:
+        print(m)
+

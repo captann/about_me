@@ -1,0 +1,11 @@
+chislo1 = int(input())
+count = 0
+while chislo1 != 1:
+    count = count + 1
+    if chislo1 % 2 == 0:
+        chislo1 = chislo1 / 2
+    else:
+        chislo1 = (chislo1 * 3) + 1
+else:
+    print(count)
+

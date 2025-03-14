@@ -1,0 +1,36 @@
+count = int(input())
+names = []
+save = []
+for i in range(count):
+    name = input()
+    save = []
+    while name != '*':
+        if ' ' in name:
+            name.strip()
+            k = name.split(' ')
+            for t in k:
+                t = t.strip()
+                names.append(t)
+        else:
+            names.append(name)
+        name = input()
+    else:
+        names.append(name)
+m = names.copy()
+for t in names:
+    if t == '':
+        m.remove(t)
+names.clear()
+k = '-'.join(m)
+m.clear()
+names = k.split('*')
+names.remove(names[-1])
+names.reverse()
+k = len(names)
+for i in range(k):
+    s = names[i].strip('-')
+    if i != k - 1:
+        print(s, ', ', end='', sep='')
+    else:
+        print(s)
+

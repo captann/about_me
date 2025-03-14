@@ -1,0 +1,36 @@
+import pymorphy2
+morph = pymorphy2.MorphAnalyzer()
+word = input()
+res = morph.parse(word)[0]
+if res.tag.POS == "NOUN":
+    word = morph.parse(word)[0].normal_form
+    print(f"Единственное число:")
+    print("Именительный падеж:", end=' ')
+    print(morph.parse(word)[0].inflect({'sing', 'nomn'}).word)
+    print("Родительный падеж:", end=' ')
+    print(morph.parse(word)[0].inflect({'sing', 'gent'}).word)
+    print("Дательный падеж:", end=' ')
+    print(morph.parse(word)[0].inflect({'sing', 'datv'}).word)
+    print("Винительный падеж:", end=' ')
+    print(morph.parse(word)[0].inflect({'sing', 'accs'}).word)
+    print("Творительный падеж:", end=' ')
+    print(morph.parse(word)[0].inflect({'sing', 'ablt'}).word)
+    print("Предложный падеж:", end=' ')
+    print(morph.parse(word)[0].inflect({'sing', 'loct'}).word)
+    print("Множественное число:")
+    print("Именительный падеж:", end=' ')
+    print(morph.parse(word)[0].inflect({'plur', 'nomn'}).word)
+    print("Родительный падеж:", end=' ')
+    print(morph.parse(word)[0].inflect({'plur', 'gent'}).word)
+    print("Дательный падеж:", end=' ')
+    print(morph.parse(word)[0].inflect({'plur', 'datv'}).word)
+    print("Винительный падеж:", end=' ')
+    print(morph.parse(word)[0].inflect({'plur', 'accs'}).word)
+    print("Творительный падеж:", end=' ')
+    print(morph.parse(word)[0].inflect({'plur', 'ablt'}).word)
+    print("Предложный падеж:", end=' ')
+    print(morph.parse(word)[0].inflect({'plur', 'loct'}).word)
+else:
+    print("Не существительное")
+
+

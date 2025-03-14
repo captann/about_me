@@ -1,0 +1,10 @@
+was = set()
+
+
+def print_only_new(message):
+    global was
+    if message not in was:
+        print(message)
+        was.add(message)
+
+

@@ -1,0 +1,31 @@
+def transpose(matrix):
+    row = len(matrix)
+    col = len(matrix[0])
+    if row < col:
+        matrix.append([0] * (col - row))
+    work = []
+    for i in matrix:
+        for t in i:
+            work.append(t)
+    final = []
+    save = []
+    count = - col
+    if col > row:
+        for i in range(col):
+            save = []
+            for t in range(row):
+                if t == 0:
+                    save.append(work[i])
+                else:
+                    save.append(work[i + col])
+                matrix[i] = save
+    elif col == row != 1:
+        for i in range(row):
+            save = []
+            count = -col
+            for t in range(col):
+                save.append(work[i + count + col])
+                count = count + col
+            matrix[i] = save
+
+

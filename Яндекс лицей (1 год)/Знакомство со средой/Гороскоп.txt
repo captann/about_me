@@ -1,0 +1,8 @@
+imya = input()
+familia = input()
+pet = input()
+znak = input()
+print('Индивидуальный гороскоп для пользователя', imya, familia)
+print('Кем вы были в прошлой жизни:', pet)
+print('Ваш знак зодиака -', znak, ', поэтому вы - тонко чувствующая натура.')
+

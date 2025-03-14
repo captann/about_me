@@ -1,0 +1,29 @@
+N = int(input())
+last = 0
+last2 = -999999999999
+menshe = []
+bolshe = []
+for i in range(N):
+    number = int(input())
+    if number >= 0:
+        bolshe.append(number)
+    else:
+        menshe.append(number)
+b = len(bolshe)
+m = len(menshe)
+for j in range(b):
+    last = 0
+    for u in bolshe:
+        if u >= last:
+            last = u
+    print(last)
+    bolshe.remove(last)
+for q in range(m):
+    last2 = -999999999999
+    for x in menshe:
+        if x >= last2:
+            last2 = x
+    print(last2)
+    menshe.remove(last2)
+            
+

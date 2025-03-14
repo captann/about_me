@@ -1,0 +1,29 @@
+import string
+from random import sample
+
+
+def generate_password(m):
+    global abc
+    return ''.join(sample(abc, m))
+
+
+def main(n, m):
+    save = []
+    chek = []
+    for i in range(n):
+        a = generate_password(m)
+        while a in chek:
+            a = generate_password(m)
+        chek.append(a)
+        save.append(a)
+    return save
+
+
+save = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'm', 'n', 'p',
+        'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D',
+        'E', 'F', 'G', 'H', 'J', 'K', 'L', 'M', 'N', 'P', 'Q', 'R', 'S', 'T',
+        'U', 'V', 'W', 'X', 'Y', 'Z', '2', '3', '4', '5', '6', '7', '8', '9']
+abc = save * 5
+
+
+

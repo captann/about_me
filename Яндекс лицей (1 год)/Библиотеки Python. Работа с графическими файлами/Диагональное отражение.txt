@@ -1,0 +1,10 @@
+from PIL import Image
+
+
+def mirror():
+    image = Image.open("image.jpg")
+    final = image.transpose(Image.FLIP_LEFT_RIGHT)
+    final = final.transpose(Image.ROTATE_270)
+    final.save('res.jpg')
+
+

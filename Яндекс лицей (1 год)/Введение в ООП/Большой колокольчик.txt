@@ -1,0 +1,13 @@
+class BigBell:
+    def __init__(self):
+        self.ev = 'ding'
+
+    def sound(self):
+        if self.ev == 'ding':
+            print(self.ev)
+            self.ev = 'dong'
+        else:
+            print(self.ev)
+            self.ev = 'ding'
+
+

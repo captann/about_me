@@ -1,0 +1,21 @@
+print('Do you speak foreing laungages?')
+print('Варианты ответа:')
+print('"yes"', '"no"', '"i don not understand the questuon"')
+otvet1 = input()
+a = '"yes"'
+b = '"no"'
+c = '"i don not understand the questuon"'
+if otvet1 == a or otvet1 == b or otvet1 == c:
+    print('How old are you?')
+    otvet2 = input()
+else:
+    print('What a stupid guy!')
+d = '12'
+e = '16'
+f = '22'
+if (otvet2 == d) or (otvet2 == e) or (otvet2 == f):
+    print('Than you for your answers!')
+    print('You are a poliglot!!')
+else:
+    print('What a stupid guy!')
+

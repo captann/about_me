@@ -1,0 +1,15 @@
+count = 0
+maxim = 0
+combination = input()
+k = len(combination)
+for i in range(k):
+    h = combination[i]
+    if h == 'î':
+        count = count + 1
+        if count > maxim:
+            maxim = count
+    else:
+        count = 0
+print(maxim)
+
+

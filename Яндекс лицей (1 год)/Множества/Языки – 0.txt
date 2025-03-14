@@ -1,0 +1,19 @@
+eng = int(input())
+e = set()
+germ = int(input())
+g = set()
+for i in range(eng):
+    en = input()
+    e.add(en)
+for j in range(germ):
+    ge = input()
+    g.add(ge)
+differ = e.symmetric_difference(g)
+abc = set()
+if differ != abc:
+    print(len(differ))
+else:
+    print('NO')
+
+    
+

@@ -1,0 +1,20 @@
+print('Do You speak English?')
+print('Can you translate the previous qustion?')
+otvet1 = input()
+otvet2 = input()
+if ('да' not in otvet1 or 'нет' not in otvet1) and \
+   ('да' not in otvet2 or 'нет' not in otvet2):
+    print('Losharik')
+# далее пошел ответ на вопрос дада
+if otvet1 == 'да' and otvet2 == 'да':
+    print('Вы- полиглот')
+# далее пошел данет
+if otvet1 == 'да' and otvet2 == 'нет':
+    print('Вы- полиглот/2')
+# далее пошелнетда
+if otvet1 == 'нет' and otvet2 == 'да':
+    print('Вы- полиглот/2')
+# далее пошелнетнет
+if otvet1 == 'нет' and otvet2 == 'нет':
+    print('Вы не полиглот')
+
