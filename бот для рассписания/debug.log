@@ -1,0 +1,101 @@
+2024-11-29 17:18:45,535 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-11-29 17:18:45,575 - DEBUG - URL being requested: GET https://www.googleapis.com/calendar/v3/users/me/calendarList?alt=json
+2024-11-29 17:18:45,575 - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2024-11-29 17:18:46,395 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-11-29 17:18:46,398 - DEBUG - URL being requested: GET https://www.googleapis.com/calendar/v3/users/me/calendarList?alt=json
+2024-11-29 17:18:46,399 - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2024-11-29 17:18:47,133 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-11-29 17:18:47,136 - DEBUG - URL being requested: GET https://www.googleapis.com/calendar/v3/users/me/calendarList?alt=json
+2024-11-29 17:18:47,137 - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2024-11-29 17:18:47,892 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-11-29 17:18:47,895 - DEBUG - URL being requested: GET https://www.googleapis.com/calendar/v3/users/me/calendarList?alt=json
+2024-11-29 17:18:47,895 - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2024-11-29 17:18:48,638 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-11-29 17:18:48,641 - DEBUG - URL being requested: GET https://www.googleapis.com/calendar/v3/users/me/calendarList?alt=json
+2024-11-29 17:18:48,642 - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2024-11-29 17:18:49,513 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-11-29 17:18:49,517 - DEBUG - URL being requested: GET https://www.googleapis.com/calendar/v3/users/me/calendarList?alt=json
+2024-11-29 17:18:49,517 - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2024-11-29 17:18:50,264 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-11-29 17:18:50,267 - DEBUG - URL being requested: GET https://www.googleapis.com/calendar/v3/users/me/calendarList?alt=json
+2024-11-29 17:18:50,267 - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2024-11-29 17:18:51,125 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-11-29 17:18:51,128 - DEBUG - URL being requested: GET https://www.googleapis.com/calendar/v3/users/me/calendarList?alt=json
+2024-11-29 17:18:51,128 - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2024-11-29 17:18:51,929 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-11-29 17:18:51,932 - DEBUG - URL being requested: GET https://www.googleapis.com/calendar/v3/users/me/calendarList?alt=json
+2024-11-29 17:18:51,932 - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2024-11-29 17:18:52,943 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-11-29 17:18:52,948 - DEBUG - URL being requested: GET https://www.googleapis.com/calendar/v3/users/me/calendarList?alt=json
+2024-11-29 17:18:52,948 - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2024-11-29 17:18:53,777 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-11-29 17:18:53,782 - DEBUG - URL being requested: GET https://www.googleapis.com/calendar/v3/users/me/calendarList?alt=json
+2024-11-29 17:18:53,782 - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2024-11-29 17:18:54,590 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-11-29 17:18:54,613 - DEBUG - URL being requested: GET https://www.googleapis.com/calendar/v3/users/me/calendarList?alt=json
+2024-11-29 17:18:54,614 - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2024-11-29 17:18:55,407 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-11-29 17:18:55,438 - DEBUG - URL being requested: GET https://www.googleapis.com/calendar/v3/users/me/calendarList?alt=json
+2024-11-29 17:18:55,438 - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2024-11-29 17:18:56,265 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-11-29 17:18:56,268 - DEBUG - URL being requested: GET https://www.googleapis.com/calendar/v3/users/me/calendarList?alt=json
+2024-11-29 17:18:56,268 - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2024-11-29 17:18:57,310 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-11-29 17:18:57,314 - DEBUG - URL being requested: GET https://www.googleapis.com/calendar/v3/users/me/calendarList?alt=json
+2024-11-29 17:18:57,315 - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2024-11-29 17:18:58,694 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-11-29 17:18:58,698 - DEBUG - URL being requested: GET https://www.googleapis.com/calendar/v3/users/me/calendarList?alt=json
+2024-11-29 17:18:58,698 - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2024-11-29 17:18:59,708 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-11-29 17:18:59,713 - DEBUG - URL being requested: GET https://www.googleapis.com/calendar/v3/users/me/calendarList?alt=json
+2024-11-29 17:18:59,713 - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2024-11-29 17:19:00,538 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-11-29 17:19:00,545 - DEBUG - URL being requested: GET https://www.googleapis.com/calendar/v3/users/me/calendarList?alt=json
+2024-11-29 17:19:00,545 - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2024-11-29 17:19:01,461 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-11-29 17:19:01,464 - DEBUG - URL being requested: GET https://www.googleapis.com/calendar/v3/users/me/calendarList?alt=json
+2024-11-29 17:19:01,464 - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2024-11-29 17:19:02,509 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-11-29 17:19:02,512 - DEBUG - URL being requested: GET https://www.googleapis.com/calendar/v3/users/me/calendarList?alt=json
+2024-11-29 17:19:02,512 - DEBUG - Making request: POST https://oauth2.googleapis.com/token
+2024-11-29 17:19:03,384 - DEBUG - Generated new state 7nlCwkwtyZFugupWwIpAsFWVO2L9TD.
+2024-11-29 17:19:19,739 - INFO - "GET /?state=7nlCwkwtyZFugupWwIpAsFWVO2L9TD&code=4/0AeanS0ZqouqQ8bRYTGI66ZJ7KKUfUMW7Ah2RZUh1vQvxRW24SkFFlFglqYbiYzj34enzSQ&scope=https://www.googleapis.com/auth/calendar HTTP/1.1" 200 65
+2024-11-29 17:19:19,740 - DEBUG - Encoding `client_id` "770813874973-e970c07ecucgqd6kietipl4bsj1jlrut.apps.googleusercontent.com" with `client_secret` as Basic auth credentials.
+2024-11-29 17:19:19,741 - DEBUG - Requesting url https://oauth2.googleapis.com/token using method POST.
+2024-11-29 17:19:19,741 - DEBUG - Supplying headers {'Accept': 'application/json', 'Content-Type': 'application/x-www-form-urlencoded'} and data {'grant_type': 'authorization_code', 'code': '4/0AeanS0ZqouqQ8bRYTGI66ZJ7KKUfUMW7Ah2RZUh1vQvxRW24SkFFlFglqYbiYzj34enzSQ', 'redirect_uri': 'http://localhost:60370/'}
+2024-11-29 17:19:19,741 - DEBUG - Passing through key word arguments {'timeout': None, 'auth': <requests.auth.HTTPBasicAuth object at 0x00000246F3F668A0>, 'verify': None, 'proxies': None, 'cert': None}.
+2024-11-29 17:19:19,743 - DEBUG - Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2024-11-29 17:19:19,893 - DEBUG - https://oauth2.googleapis.com:443 "POST /token HTTP/11" 200 None
+2024-11-29 17:19:19,894 - DEBUG - Request to fetch token completed with status 200.
+2024-11-29 17:19:19,895 - DEBUG - Request url was https://oauth2.googleapis.com/token
+2024-11-29 17:19:19,895 - DEBUG - Request headers were {'User-Agent': 'python-requests/2.32.3', 'Accept-Encoding': 'gzip, deflate', 'Accept': 'application/json', 'Connection': 'keep-alive', 'Content-Type': 'application/x-www-form-urlencoded', 'Content-Length': '157', 'Authorization': 'Basic NzcwODEzODc0OTczLWU5NzBjMDdlY3VjZ3FkNmtpZXRpcGw0YnNqMWpscnV0LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tOkdPQ1NQWC1CUURwNC0xdnNWUTFUSVFMVFAyMl9iRWZtRmc5'}
+2024-11-29 17:19:19,895 - DEBUG - Request body was grant_type=authorization_code&code=4%2F0AeanS0ZqouqQ8bRYTGI66ZJ7KKUfUMW7Ah2RZUh1vQvxRW24SkFFlFglqYbiYzj34enzSQ&redirect_uri=http%3A%2F%2Flocalhost%3A60370%2F
+2024-11-29 17:19:19,896 - DEBUG - Response headers were {'Cache-Control': 'no-cache, no-store, max-age=0, must-revalidate', 'Date': 'Fri, 29 Nov 2024 14:19:21 GMT', 'Pragma': 'no-cache', 'Expires': 'Mon, 01 Jan 1990 00:00:00 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Vary': 'Origin, X-Origin, Referer', 'Content-Encoding': 'gzip', 'Server': 'scaffolding on HTTPServer2', 'X-XSS-Protection': '0', 'X-Frame-Options': 'SAMEORIGIN', 'X-Content-Type-Options': 'nosniff', 'Alt-Svc': 'h3=":443"; ma=2592000,h3-29=":443"; ma=2592000', 'Transfer-Encoding': 'chunked'} and content {
+  "access_token": "ya29.a0AeDClZDr5kiSWHEWvlPeufV8UYX9-61XdwlXPfq32jQwx8lufdElweEpzEAVoJ0-lnZP7Yw3Ry2TmHgxIWK4hoBvGIjYnJyP5HPTPgF0ezUX5T4sFCQJY55kE0-6tMTBOreTvYWOO4rii8Y1MRvSqWTAbbTb8t8QyQWKl5RDaCgYKAUASARESFQHGX2Mik_BeyFW3EsU-MCDcJjTIHg0175",
+  "expires_in": 3599,
+  "refresh_token": "1//0c9rQsI9iSE7eCgYIARAAGAwSNwF-L9Irq8IRUcJHCo1_9ZXhkSfeWk28XA93EQ7L7dg7AivjQVdGdYitHOlM9oi7zPK65zNOR5Q",
+  "scope": "https://www.googleapis.com/auth/calendar",
+  "token_type": "Bearer"
+}.
+2024-11-29 17:19:19,896 - DEBUG - Invoking 0 token response hooks.
+2024-11-29 17:19:19,896 - DEBUG - Obtained token {'access_token': 'ya29.a0AeDClZDr5kiSWHEWvlPeufV8UYX9-61XdwlXPfq32jQwx8lufdElweEpzEAVoJ0-lnZP7Yw3Ry2TmHgxIWK4hoBvGIjYnJyP5HPTPgF0ezUX5T4sFCQJY55kE0-6tMTBOreTvYWOO4rii8Y1MRvSqWTAbbTb8t8QyQWKl5RDaCgYKAUASARESFQHGX2Mik_BeyFW3EsU-MCDcJjTIHg0175', 'expires_in': 3599, 'refresh_token': '1//0c9rQsI9iSE7eCgYIARAAGAwSNwF-L9Irq8IRUcJHCo1_9ZXhkSfeWk28XA93EQ7L7dg7AivjQVdGdYitHOlM9oi7zPK65zNOR5Q', 'scope': ['https://www.googleapis.com/auth/calendar'], 'token_type': 'Bearer', 'expires_at': 1732893558.8961263}.
+2024-11-29 17:19:19,948 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-11-29 17:19:19,951 - DEBUG - URL being requested: GET https://www.googleapis.com/calendar/v3/users/me/calendarList?alt=json
+2024-11-29 17:19:21,065 - INFO - file_cache is only supported with oauth2client<4.0.0
+2024-11-29 17:19:21,068 - DEBUG - URL being requested: GET https://www.googleapis.com/calendar/v3/users/me/calendarList?alt=json
+2024-11-29 17:19:22,236 - DEBUG - URL being requested: GET https://www.googleapis.com/calendar/v3/users/me/calendarList?alt=json
+2024-11-29 17:19:22,526 - DEBUG - URL being requested: GET https://www.googleapis.com/calendar/v3/calendars/2ceaa6c3314c413aa0633bf003ccc968120d94756dc67e22904e32e4f2f69fb3%40group.calendar.google.com/events?timeMin=2022-01-01T00%3A00%3A00Z&singleEvents=true&alt=json
+2024-11-29 17:19:22,735 - DEBUG - URL being requested: GET https://www.googleapis.com/calendar/v3/calendars/d2a0c52cfbfa85efa40b71806b847388d749ade13cf4c43652a1650f1d9c81b8%40group.calendar.google.com/events?timeMin=2024-01-01T00%3A00%3A00Z&singleEvents=true&alt=json
+2024-11-29 17:19:23,377 - DEBUG - Starting new HTTP connection (1): www.google.com:80
+2024-11-29 17:19:24,420 - DEBUG - http://www.google.com:80 "GET / HTTP/11" 200 8540
+2024-11-29 17:19:24,474 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+2024-11-29 17:19:24,475 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+2024-11-29 17:19:27,710 - DEBUG - https://api.telegram.org:443 "GET /bot7523838337:AAFbFPixPh1f-G_nsJY1zriHmJ3c3z5rrGI/getMe HTTP/11" 200 250
+2024-11-29 17:19:27,714 - DEBUG - Starting new HTTPS connection (1): api.telegram.org:443
+2024-11-29 17:19:27,776 - DEBUG - https://api.telegram.org:443 "POST /bot7523838337:AAFbFPixPh1f-G_nsJY1zriHmJ3c3z5rrGI/sendMessage?chat_id=1910009799&text=%F0%9F%9B%A0%EF%B8%8F+%D0%9A%D0%B0%D0%B6%D0%B4%D0%B0%D1%8F+%D0%BD%D0%BE%D0%B2%D0%B0%D1%8F+%D1%82%D0%B5%D0%BC%D0%B0+%E2%80%94+%D1%8D%D1%82%D0%BE+%D0%BD%D0%B0%D0%B2%D1%8B%D0%BA%2C+%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D1%8B%D0%B9+%D0%BF%D1%80%D0%B8%D0%B1%D0%BB%D0%B8%D0%B6%D0%B0%D0%B5%D1%82+%D1%82%D0%B5%D0%B1%D1%8F+%D0%BA+%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B5+%D0%BC%D0%B5%D1%87%D1%82%D1%8B%21&reply_markup=%7B%22remove_keyboard%22%3A+true%7D HTTP/11" 200 699
+2024-11-29 17:19:28,983 - DEBUG - https://api.telegram.org:443 "POST /bot7523838337:AAFbFPixPh1f-G_nsJY1zriHmJ3c3z5rrGI/sendMessage?chat_id=1910009799&text=%F0%9F%94%94+%D0%9D%D0%B0%D0%BF%D0%BE%D0%BC%D0%B8%D0%BD%D0%B0%D1%8E%3A+%D1%82%D0%B0%D0%B1%D0%BB%D0%B5%D1%82%D0%BA%D0%B8+%D0%B4%D0%BB%D1%8F+%D0%96%D0%9A%D0%A2+%D0%BD%D0%B0+%D1%81%D0%B5%D0%B3%D0%BE%D0%B4%D0%BD%D1%8F%21&reply_markup=%7B%22remove_keyboard%22%3A+true%7D HTTP/11" 200 537
+2024-11-29 17:19:30,196 - DEBUG - https://api.telegram.org:443 "POST /bot7523838337:AAFbFPixPh1f-G_nsJY1zriHmJ3c3z5rrGI/sendMessage?chat_id=1910009799&text=%F0%9F%92%8A+%D0%A2%D0%B0%D0%B1%D0%BB%D0%B5%D1%82%D0%BA%D0%B8+%D0%BE%D1%82+%D0%B4%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F+%D0%BF%D0%BE%D1%80%D0%B0+%D0%BF%D1%80%D0%B8%D0%BD%D1%8F%D1%82%D1%8C%2C+%D0%BD%D0%B5+%D0%BE%D1%82%D0%BA%D0%BB%D0%B0%D0%B4%D1%8B%D0%B2%D0%B0%D0%B9%21&reply_markup=%7B%22remove_keyboard%22%3A+true%7D HTTP/11" 200 592
+2024-11-29 17:19:31,277 - DEBUG - https://api.telegram.org:443 "POST /bot7523838337:AAFbFPixPh1f-G_nsJY1zriHmJ3c3z5rrGI/sendMessage?chat_id=1910009799&text=%D0%9F%D1%80%D0%B8%D0%BD%D1%8F%D0%BB+%D0%BB%D0%B8+%D1%82%D1%8B+%D1%81%D0%B5%D0%B3%D0%BE%D0%B4%D0%BD%D1%8F+%D0%BB%D0%B5%D0%BA%D0%B0%D1%80%D1%81%D1%82%D0%B2%D0%B0+%D0%B4%D0%BB%D1%8F+%D0%B7%D0%B4%D0%BE%D1%80%D0%BE%D0%B2%D1%8C%D1%8F+%D0%96%D0%9A%D0%A2%3F&reply_markup=%7B%22keyboard%22%3A+%5B%5B%7B%22text%22%3A+%22%5Cu0414%5Cu0430%22%7D%2C+%7B%22text%22%3A+%22%5Cu041d%5Cu0435%5Cu0442%22%7D%5D%5D%2C+%22resize_keyboard%22%3A+true%7D HTTP/11" 200 573
+2024-11-29 17:19:39,748 - DEBUG - Starting new HTTP connection (1): www.google.com:80
+2024-11-29 17:19:40,035 - DEBUG - http://www.google.com:80 "GET / HTTP/11" 200 8495
+2024-11-29 17:19:47,884 - DEBUG - https://api.telegram.org:443 "GET /bot7523838337:AAFbFPixPh1f-G_nsJY1zriHmJ3c3z5rrGI/getUpdates?offset=1&timeout=20 HTTP/11" 200 23
